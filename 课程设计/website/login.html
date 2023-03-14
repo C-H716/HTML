@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>登陆 — Minecraft百科</title>
+  <link rel="Shortcut Icon" href="../assets/images/icon/crafting_table_logo.png">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
+  <script src="../assets/libs/jquery-3.3.1.js"></script>
+  <script src="../assets/js/login.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div>
+    <img src="../assets/images/logo/logo.png" alt="logo">
+  </div>
+  <nav class="switch_nav">
+    <a href="register.html" id="switch_signup" class="switch_btn">注册</a>
+    <a href="javascript:" id="switch_login" class="switch_btn on">登陆</a>
+  </nav>
+  <div id="login">
+    <form method="post" action="index.html" name="login">
+      <ul class="group_input">
+        <li>
+          <div class="input_border">
+            <label for="mobile">
+            </label>
+            <input type="text" class="input_value mobile required" id="mobile" name="username"
+                   placeholder="手机号或邮箱">
+            <span class="bottom"></span>
+            <span class="right"></span>
+            <span class="top"></span>
+            <span class="left"></span>
+          </div>
+        </li>
+        <li style="height: 16px"></li>
+        <li>
+          <div class="input_border">
+            <label for="password">
+              <input type="password" class="input_value password required" id="password" name="password"
+                     placeholder="密码"
+                     autocomplete="off">
+              <span class="bottom"></span>
+              <span class="right"></span>
+              <span class="top"></span>
+              <span class="left"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <button type="submit" class="submit_btn" id="btnSubmit">登陆</button>
+    </form>
+    <div class="states">
+            <span class="left">
+                <a href="javascript:">手机验证码登<span></span>陆</a>
+            </span>
+      <span class="right">
+                <a href="javascript:">无法登陆？</a>
+            </span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

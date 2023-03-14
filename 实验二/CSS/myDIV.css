@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+}
+
+.main_menu {
+    width: 100vw;
+    height: 50px;
+    background-color: #ff8954;
+}
+
+.main_menu div {
+    float: left;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: lightgray;
+}
+
+.header {
+    width: 760px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background-color: #8abfef;
+}
+
+.body {
+    width: 760px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.body .content {
+    float: left;
+    width: 480px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.body .sidebar {
+    float: left;
+    Width: 280px;
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+
+.footer {
+    clear: both;
+    Width: 760px;
+    Height: 66px;
+    text-align: center;
+    line-height: 66px;
+    background-color: gold;
+}
+
+p {
+    color: blue;
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.myFont {
+    background-color: red;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#myDiv {
+    /*background: image("/素材") no-repeat center;*/
+}
