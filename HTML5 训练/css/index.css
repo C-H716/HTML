@@ -1,0 +1,26 @@
+.main_menu {
+    margin: auto 0;
+}
+
+.main_menu ul li {
+    float: left;
+}
+
+.main_menu ul, .main_menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+span {
+    margin:0 5px;
+}
