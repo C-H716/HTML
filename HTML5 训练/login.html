@@ -6,7 +6,23 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript">
+      function login() {
+          var name = document.register.name.value === "webdesign";
+          var password = document.register.password.value === "123456";
+          if (name && password) {
+              return true;
+          } else if (!name) {
+              alert("姓名不存在");
+          } else if (name && !password) {
+              document.register.password.value = "";
+              alert("密码错误");
+          }
+          return false;
+      }
+  </script>
   <title>HTML5学习系统</title>
+
 </head>
 <body>
 <header>
@@ -22,14 +38,14 @@
   </article>
   <br>
 </header>
-<form>
+<form method="post" action="index.html" onsubmit="return login()" name="register">
   <fieldset>
     <legend>请输入登陆信息</legend>
     <label>
-      姓名：<input type="text" placeholder="请输入您的姓名">
+      姓名：<input type="text" placeholder="请输入您的姓名" name="name" id="name">
     </label>
     <label>
-      密码：<input type="password" placeholder="请输入您的密码" autocomplete="off">
+      密码：<input type="password" placeholder="请输入您的密码" autocomplete="off" name="password" id="password">
     </label>
     <input type="submit">
     <input type="reset">

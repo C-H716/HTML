@@ -36,10 +36,10 @@
   <fieldset>
     <legend>请输入注册信息</legend>
     <label>
-      姓名：<input type="text" placeholder="请输入您的姓名">
+      姓名：<input type="text" placeholder="请输入您的姓名" name="name">
     </label>
     <label>
-      密码：<input type="password" placeholder="请输入您的密码" autocomplete="off">
+      密码：<input type="password" placeholder="请输入您的密码" name="password" autocomplete="off">
     </label>
     <label>
       性别：
@@ -47,7 +47,7 @@
       <input type="radio" name="sex" value="girl">女
     </label>
     <label>
-      出生日期：<input type="date"><br>
+      出生日期：<input type="date" name="date"><br>
     </label>
     <label>
       出生城市：
@@ -63,21 +63,23 @@
       </select>
     </label>
     <label>
-      邮箱：<input type="email" placeholder="请输入您的邮箱">
+      邮箱：<input type="email" placeholder="请输入您的邮箱" name="email">
     </label>
     <label>
       最爱的网站：<input type="url" name="url" list="url_list">
     </label>
     <datalist id="url_list">
-      <option value="https://www.baidu.com">
+      <option value="https://www.bilibili.com/">
       <option value="https://www.gdei.edu.cn">
+      <option value="https://github.com/">
+      <option value="https://i.chaoxing.com/">
     </datalist>
     <label>
       最爱的颜色：<input type="color" name="color">
     </label>
     <label>
       最爱的数字：
-      <input type="range" min="0" max="100" id="range" value="0" onchange="range_bind_value(1)">
+      <input type="range" min="0" max="100" name="range" id="range" value="0" onchange="range_bind_value(1)">
       <input type="text" id="range_value" value="0" onchange="range_bind_value(2)">
     </label>
     <input type="submit">
