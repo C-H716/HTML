@@ -2,11 +2,11 @@
     margin: auto 0;
 }
 
-.main_menu ul li {
+.main_menu li {
     float: left;
 }
 
-.main_menu ul, .main_menu li {
+.main_menu ul {
     display: inline-block;
     list-style-type: none;
     margin: 0 0;
