@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="../frame/jquery-3.6.1.slim.min.js"></script>
+    <script type="text/javascript">
+        function dataValidateForm() {
+            var str = [];
+            var error = [];
+            var username = document.register.username.value;
+            var password = document.register.password.value;
+            var password_again = document.register.password_again.value;
+            var email = document.register.email.value;
+            var answer = document.register.answer.value;
+            var date = document.register.date.value;
+            var qq = document.register.qq.value;
+            var introduce = document.register.introduce.value;
+            var signature = document.register.signature.value;
+            var pattern = /^([A-Za-z0-9_\-.\u4e00-\u9fa5])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,8})$/;
+
+            if (!username) {
+                str.push("用户名");
+            } else if (username.length > 5) {
+                error.push("用户名过长(最大输入为5个字符)");
+            }
+            if (!password) {
+                str.push("密码");
+            }
+            if (!password_again) {
+                str.push("确认密码");
+            }
+            if (password && password_again && (password !== password_again)) {
+                error.push("两个密码不相同");
+            }
+            if (!email) {
+                str.push("Email");
+            } else if (!pattern.test(email)) {
+                error.push("Email格式错误");
+            }
+            if (!answer) {
+                str.push("回答");
+            }
+            if (!date) {
+                str.push("日期");
+            }
+            if (!qq) {
+                str.push("QQ号");
+            }
+            if (!introduce) {
+                str.push("自我介绍");
+            }
+            if (!signature) {
+                str.push("个人签名");
+            }
+            if (str.length) {
+                error.unshift("请填写：" + str.join("、"));
+            }
+            if (error.length) {
+                if (error.length === 1) {
+                    alert(error);
+                } else if (error.length > 1) {
+                    var errorList = "";
+                    for (let i = 0; i < error.length; i++) {
+                        errorList += i + 1 + "、" + error[i] + "\n";
+                    }
+                    alert(errorList);
+                }
+                return false;
+            } else {
+                alert("用户名：" + username +
+                    "\n密码：" + password +
+                    "\nEmail：" + email);
+                return true;
+            }
+        }
+    </script>
+    <script>
+        $().ready(function () {
+            $("#register").keydown(function (e) {
+                // 显示键盘按下的键码
+                alert(e.code);
+            });
+            $("#username").focus(function () {
+                alert("focus");
+            });
+            $("[name$='password']").blur(function () {
+                alert("blur");
+            });
+            $("#register").submit(function () {
+                alert("xx");
+            });
+        });
+    </script>
+</head>
+<body>
+<section>
+    <form id="register" name="register" method="post" action="mailto:ivan@qq.com?subject=注册信息" enctype="text/plain"
+          onsubmit="return dataValidateForm()">
+        <table>
+            <thead>
+            <tr>
+                <th class="bold" id="first_line" colspan="2">注册</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="bold" colspan="2">必填</td>
+            </tr>
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" name="password" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td>确认密码</td>
+                <td><input type="password" name="password_again" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" name="email"><br>
+                    请确保信箱有效,我们将发送激活说明到这个地址
+                </td>
+            </tr>
+            <tr>
+                <td class="bold" colspan="2">选填</td>
+            </tr>
+            <tr>
+                <td>安全提问</td>
+                <td>
+                    <select name="question">
+                        <option value="mather_name" selected>母亲的名字</option>
+                        <option value="father_name">父亲的名字</option>
+                    </select>
+                    如果您启用安全提问,登录时需填入相应的项目才能登录
+                </td>
+            </tr>
+            <tr>
+                <td>回答</td>
+                <td><input type="text" name="answer">
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <label>
+                        <input type="radio" name="sex" value="boy">
+                        男
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="girl">
+                        女
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="secrecy" checked="checked">
+                        保密
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>QQ</td>
+                <td><input type="text" name="qq"></td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea style="width: 200px; height:100px" name="introduce"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="bold" colspan="2">论坛个性化设置</td>
+            </tr>
+            <tr>
+                <td>每页主题数</td>
+                <td>
+                    <select name="topics_value">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20" selected>20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>每页帖数</td>
+                <td>
+                    <select name="post_value">
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>时间格式</td>
+                <td>
+                    <label>
+                        <input type="radio" name="time" value="default" checked="checked">
+                        默认
+                    </label>
+                    <label>
+                        <input type="radio" name="time" value="12">
+                        12小时
+                    </label>
+                    <label>
+                        <input type="radio" name="time" value="24">
+                        24小时
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>其他选项</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="other_options" value="visual" checked="checked">
+                        Email地址可见
+                    </label>
+                    <label>
+                        <input type="checkbox" name="other_options" value="agree" checked="checked">
+                        同意接收论坛通知(Email或短消息)
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>个人签名</td>
+                <td>
+                    <textarea style="width: 200px; height:100px" name="signature"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit">
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</section>
+</body>
+</html>

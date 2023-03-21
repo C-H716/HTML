@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#first_line {
+    font-size: 20px;
+    text-indent: 70px;
+    letter-spacing: 70px;
+}
+
+table {
+    width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+table, th, tr, td {
+    border: 1px dashed black;
+    border-collapse: collapse;
+}
+
+.submit {
+    text-align: center;
+}
+

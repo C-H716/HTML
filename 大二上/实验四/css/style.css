@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.footerLi {
+    float: left;
+    width: 80px;
+    text-align: center;
+    list-style: none;
+}

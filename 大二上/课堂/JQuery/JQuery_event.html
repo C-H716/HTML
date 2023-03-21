@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery_event</title>
+    <script src="../../frame/jquery-3.6.1.slim.min.js"></script>
+    <script>
+        $().ready(function () {
+            $("#myP").click(function () {
+                alert("click p");
+            });
+            $("#myP1").on("click", function () {
+                alert("click p1")
+            });
+            $("#myP1").hover(function () {
+                $("#myP1").css("color", "red");
+            }, function () {
+                $("#myP1").css("color", "blue");
+            });
+            $(window).resize(function () {
+                alert("resize");
+            });
+
+        });
+    </script>
+</head>
+<body>
+<p id="myP">this is my p</p>
+<p id="myP1">this is my p1</p>
+</body>
+</html>

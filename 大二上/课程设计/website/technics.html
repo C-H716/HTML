@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教程/技术 — Minecraft百科</title>
+    <link rel="Shortcut Icon" href="../assets/images/icon/crafting_table_logo.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/technics.css"/>
+    <script src="../assets/libs/jquery-3.3.1.js"></script>
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/technics.js"></script>
+</head>
+<body>
+<section>
+    <div class="main_menu">
+        <ul>
+            <li>
+                <div id="logo">
+                    <img src="../assets/images/logo/logo_reverse.png" alt="logo">
+                </div>
+            </li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="https://mc.163.com/20190918/31450_833241.html">游戏简介</a></li>
+            <li><a href="index.html#content" id="gameplay">游戏内容</a></li>
+            <li><a href="#">入门教程</a></li>
+            <li><a href="https://www.mcbbs.net/forum-news-1.html">更新日志</a></li>
+            <li><a href="index.html#jumpAdvanced" id="advanced">技术与开发</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="drop_button">开始游戏</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.minecraft.net/">Minecraft官网</a>
+                        <a href="https://mc.163.com/">中国版官网</a>
+                        <a href="https://www.mcbbs.net/">MCBBS论坛</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="head_portrait_button" href="login.html">
+                    <img src="../assets/images/icon/head_portrait.png" alt="" class="head_portrait">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 68px;"></div>
+    <div class="main">
+        <div class="contents">
+            <ul>
+                <li id="contents">
+                    <a href=javascript:void(0) id="content">
+                        <span>目录</span></a></li>
+                <li class="indent">
+                    <a href=javascript:void(0) id="基本概念_">
+                        <span class="toc-text">1 基本概念</span></a>
+                    <ul>
+                        <li><a href=javascript:void(0) id="红石元件_">
+                            <span class="toc-text">1.1 红石元件</span></a></li>
+                        <li><a href=javascript:void(0) id="位置_">
+                            <span class="toc-text">1.2 位置</span></a></li>
+                        <li><a href=javascript:void(0) id="电路与机械_">
+                            <span class="toc-text">1.3 电路与机械</span></a></li>
+                        <li><a href=javascript:void(0) id="信号与脉冲_">
+                            <span class="toc-text">1.4 信号与脉冲</span></a></li>
+                        <li><a href=javascript:void(0) id="信号强度_">
+                            <span class="toc-text">1.5 信号强度</span></a></li>
+                        <li><a href=javascript:void(0) id="充能_">
+                            <span class="toc-text">1.6 充能</span></a></li>
+                        <li><a href=javascript:void(0) id="激活_">
+                            <span class="toc-text">1.7 激活</span></a></li>
+                        <li><a href=javascript:void(0) id="充能与激活_">
+                            <span class="toc-text">1.8 充能与激活</span></a></li>
+                        <li><a href=javascript:void(0) id="红石刻_">
+                            <span class="toc-text">1.9 红石刻</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=javascript:void(0) id="基本种类_">
+                        <span class="toc-text">2 基本种类</span></a>
+                    <ul>
+                        <li><a href=javascript:void(0) id="数字电路_">
+                            <span class="toc-text">2.1 数字电路</span></a></li>
+                        <li><a href=javascript:void(0) id="红石模拟电路_">
+                            <span class="toc-text">2.2 红石模拟电路</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=javascript:void(0) id="基本电路_"><span
+                            class="toc-text">3 基本电路</span></a>
+                    <ul>
+                        <li><a href=javascript:void(0) id="脉冲电路_">
+                            <span class="toc-text">3.1 脉冲电路</span></a></li>
+                        <li><a href=javascript:void(0) id="时钟电路_">
+                            <span class="toc-text">3.2 时钟电路</span></a></li>
+                        <li><a href=javascript:void(0) id="传输电路_">
+                            <span class="toc-text">3.3 传输电路</span></a>
+                            <ul>
+                                <li><a href=javascript:void(0) id="中继器_">
+                                    <span class="toc-text">3.3.1 中继器</span></a></li>
+                                <li><a href=javascript:void(0) id="二极管_">
+                                    <span class="toc-text">3.3.2 二极管</span></a></li>
+                                <li><a href=javascript:void(0) id="纵向传输电路_">
+                                    <span class="toc-text">3.3.3 纵向传输电路</span></a></li>
+                                <li><a href=javascript:void(0) id="杂项传输电路_">
+                                    <span class="toc-text">3.3.4 杂项传输电路</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href=javascript:void(0) id="逻辑电路_">
+                            <span class="toc-text">3.4 逻辑电路</span></a></li>
+                        <li><a href=javascript:void(0) id="记忆电路_">
+                            <span class="toc-text">3.5 记忆电路</span></a></li>
+                        <li><a href=javascript:void(0) id="杂项电路_">
+                            <span class="toc-text">3.6 杂项电路</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="message">
+            <p class="contents_main">教程/红石电路</p>
+
+            <span style="margin:0 0 0 100px;color: gray">本文章介绍的是红石电路。关于其他红石相关条目，请见“<a
+                    href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%EF%BC%88%E6%B6%88%E6%AD%A7%E4%B9%89%EF%BC%89">红石</a>”。</span>
+
+            <p style="text-indent: 2em"><b>红石电路（Redstone circuits）</b>为玩家建造的，可以用于控制或激活其他机械的结构。</p>
+            <p style="text-indent: 2em">
+                电路本身既可以被设计为用于响应玩家的手动激活，也可以让其自动工作——或是反复输出信号，或是响应非玩家引发的变化，例如生物移动、物品掉落、植物生长、日夜更替等等。Minecraft中能够被红石控制的机械类别几乎覆盖了你能够想象到的极限，小到最简单的机械（如自动门与光开关），大到占地巨大的电梯、自动农场、小游戏平台，甚至游戏内建造的计算机。了解如何构建和使用红石电路及其可控制的机制能极大地增加Minecraft中可游玩的深度。</p>
+            <p style="text-indent: 2em" id="基本概念">红石电路的主题非常广泛，本条目只是红石电路的一个概述。点击各章节的主条目可以查看详细信息。</p>
+
+            <span class="contents_title">基本概念</span>
+            <p style="text-indent: 2em;">在描述基本的红石电路之前，需要先了解一些基本概念。</p>
+            <hr style="margin-top: 20px">
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>红石元件</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E5%85%83%E4%BB%B6%E5%88%97%E8%A1%A8"
+                           title="红石元件列表">红石元件列表</a></div>
+                    <div>
+                        <p>红石元件是在红石电路里具有一定使用目的的方块，大致分为三个大类。</p>
+                        <ul>
+                            <li id="红石元件"><b>电源</b>为整个电路或部分电路提供信号来源，例如
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                                   title="红石火把">红石火把</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E6%8C%89%E9%92%AE" title="按钮">按钮</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E6%8B%89%E6%9D%86" title="拉杆">拉杆</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E5%9D%97" title="红石块">红石块</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E5%8E%8B%E5%8A%9B%E6%9D%BF" title="压力板">压力板</a>等。
+                            </li>
+                            <li><b>传输元件</b>将信号从电路的一部分传递到另一部分，例如
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89" title="红石粉">红石粉</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                   title="红石中继器">红石中继器</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                                   title="红石比较器">红石比较器</a>等。
+                            </li>
+                            <li><b>机械元件</b>接受信号并作出反应（例如移动、发光等），例如
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AF" title="红石灯">红石灯</a>、
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8" title="发射器">发射器</a>等。
+                            </li>
+                        </ul>
+                        <p>由于红石火把、红石粉、红石中继器、红石比较器这四个方块既可以被激活，又可以激活其他元件，因此也可单独划分为一类，称为<b>红石元器件</b>。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content" style="width: 700px">
+                    <h3>位置</h3>
+                    <div>
+                        <p>一个方块占据一个正方体的空间，正方体有6个面。也就是说与一个方块的六个面直接接触的方块有6个，称之为“与该方块毗邻的方块”，简称<b>毗邻</b>。</p>
+                        <p>一个方块的毗邻和毗邻的毗邻（即与这个方块的
+                            <a href="https://zh.wikipedia.org/wiki/%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB"
+                               title="wzh:曼哈顿距离">曼哈顿距离</a>为两格以内的方块），通称为这个方块的<b>二阶毗邻</b>。一个方块的毗邻的毗邻共有19个方块（包括它本身），二阶毗邻共有25个方块（包括它本身）。
+                        </p>
+                        <p id="位置"><b>四周</b>一般指的是与该方块东西南北四个面相接触的4个方块。</p>
+                        <p>红石线、红石火把等方块需要附着在其他方块上，一旦所附着的方块被破坏，它本身也会掉落。它们所附着的方块简称为它们的<b>附着</b>。</p>
+                        <p>一些电源和传输元件有它的<b>指向</b>。
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                               title="红石中继器">中继器</a>、
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                               title="红石比较器">比较器</a>的指向就是输出端所朝向的方块，
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                               title="红石火把">红石火把</a>的指向是正上方的那一个方块，
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89"
+                               title="红石粉">红石粉</a>的指向通常与它的纹理的朝向相同，但也有特殊情况。
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 200px;">
+                    <table style="text-align: center;margin-top: 20px">
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/adjoin2.png" alt="" style="width: 100px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>毗邻方块</td>
+                        </tr>
+                        <tr style="height: 30px"></tr>
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/adjoin1.png" alt="" style="width: 150px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>以曼哈顿距离度量的“两格以内”范围</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>电路与机械</h3>
+                    <div>
+                        <p id="电路与机械">两个术语通常都用于指包含红石元件的结构，但两者一般还是有一定区别的：</p>
+                        <ul>
+                            <li><b>电路（circuit）</b>为处理信号的结构（产生，传输，修改，组合等）。</li>
+                            <li><b>机械（mechanism）</b>会对环境产生影响（移动方块，开门，改变光照强度，播放声音等）。</li>
+                        </ul>
+                        <p>
+                            所有机械一定包含电路，因此也可称为机械电路。但电路本身是不会对环境产生影响的（除了红石火把等产生的光，或活塞作为电路组成成分之一时造成的推拉方块的副效果）。复杂的电路还可以细分为数字电路和模拟电路。参见下文<a
+                                href=javascript:void(0) id="基本种类_2">基本种类</a>章节。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>信号与脉冲</h3>
+                    <div>
+                        <p id="信号与脉冲">红石电路能够产生<b>信号</b>——“有/无信号”时称为“1/0”、“真/假”或“高电平/低电平”。</p>
+                        <p><b>上边沿/上升沿</b>指红石信号由无到有的变化瞬间；<b>下边沿/下降沿</b>指红石信号由有到无的变化瞬间。</p>
+                        <p><b>相（Phase）</b>代表相位，指逻辑代数中的“相同”与“相反”（例如“1”与“0”互为反相）。</p>
+                        <p>
+                            当信号出现<b>一个</b>较为短暂的“0-1-0”过程，该过程通常被称为<b>脉冲</b>（或正脉冲。“1-0-1”的过程被称为负脉冲）。脉冲持续的时间长度被称为脉冲的<b>长度</b>。另见下文
+                            <a href=javascript:void(0) id="脉冲电路_2" title="脉冲电路">脉冲电路</a>。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>信号强度</h3>
+                    <div>
+                        <p><b>信号强度</b>通常为0到15的整数。红石线能向相邻的红石线传导信号，但每传导1格，信号强度就降低1。因此，连续的红石线最远能将信号传到15格远。为了传输更远，可以使用
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                               title="红石比较器">红石比较器</a>来保持信号强度或使用
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                               title="红石中继器">红石中继器</a>将信号强度加至15。
+                        </p>
+                        <p id="信号强度">信号强度会因为红石线之间的直接传导而衰减，也可以通过
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E6%B5%8B%E9%87%8D%E5%8E%8B%E5%8A%9B%E6%9D%BF"
+                               title="测重压力板">测重压力板</a>、阳光探测器或红石比较器直接控制输出不同的信号强度。
+                        </p>
+                        <p>
+                            红石比较器实际上可以接受和输出小于0或超过15强度的信号。如命令方块的成功次数超过15或容器内的物品超过堆叠限制，红石比较器会把它们作为强度小于0或超过15的信号进行比较或作差后输出。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>充能</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%94%B5%E8%B7%AF/%E5%85%85%E8%83%BD%E4%B8%8E%E6%BF%80%E6%B4%BB"
+                           title="红石电路/充能与激活">充能与激活</a></div>
+                    <div>
+                        <p id="充能">部分方块能被充能及解除充能。当红石信号作用于一个方块时，如果这个方块毗邻的所有机械元件都可以被激活，那么这个方块就被称为
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E4%B8%8D%E9%80%8F%E6%98%8E%E5%BA%A6#非实体方块"
+                               title="教程/不透明度"><b>实体方块</b></a>，这个行为被称为<b>充能</b>。被充能的方块叫做<b>充能方块</b>。实体方块通常都是不透明的方块。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4>强充能与弱充能</h4>
+                    <div>
+                        <p>充能又分为强充能和弱充能：</p>
+                        <ul>
+                            <li id="强充能与弱充能"><b>强充能</b>的方块可以激活毗邻的机械元件和红石元器件。实体方块可以被电源。被强充能的方块所表现性质和红石块大体相同，但是红石块不是实体方块，且<b>可以</b>改变红石线的形状和指向、向<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                                    title="红石比较器">红石比较器</a>边侧输入信号
+                                <wbr/>
+                                <sup class="nowrap" style="font-family:sans-serif;">&#91;仅<a
+                                        href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88"
+                                        title="Java版">Java版</a>&#93;</sup>，而强充能方块不能。
+                            </li>
+                            <li>当实体方块<b>仅被</b>红石线充能，我们称这个方块被<b>弱充能</b>。弱充能与强充能的区别在于，弱充能方块无法激活毗邻的红石线。</li>
+                        </ul>
+                        <p>充能方块无法再去充能其他方块，只有电源和传输元件才可以去充能一个方块。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4>充能等级</h4>
+                    <div>
+                        <p id="充能等级">使用多少信号强度的信号去充能一个方块，我们就说这个方块有多少<b>充能等级</b>。被强充能的方块有多少充能等级，就可以激活毗邻的<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89"
+                                title="红石粉">红石粉</a>至多少信号强度。充能等级的大小与充能的强与弱完全无关。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content" style="width: 600px">
+                    <h3>激活</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%94%B5%E8%B7%AF/%E5%85%85%E8%83%BD%E4%B8%8E%E6%BF%80%E6%B4%BB"
+                           title="红石电路/充能与激活">充能与激活</a></div>
+                    <div>
+                        <p>机械元件和红石元器件可被电源、充能方块和传输元件以特定的方式<b>激活</b>，引发机械元件和红石元器件的反应（如<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a>推动方块，开<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8" title="门">门</a>，<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                                title="红石火把">红石火把</a>熄灭等）。</p>
+                        <p>有些机械元件只会在刚被激活的瞬间有所反应，直到取消激活并再激活之前都不会再有所反应（如<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4%E6%96%B9%E5%9D%97"
+                                title="命令方块">命令方块</a>执行命令，<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%8A%95%E6%8E%B7%E5%99%A8"
+                                title="投掷器">投掷器</a>与<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8"
+                                title="发射器">发射器</a>发射物品，<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%9F%B3%E7%AC%A6%E7%9B%92"
+                                title="音符盒">音符盒</a>播放一个音符）。其他机械元件会在激活时始终保持状态，直到取消激活（<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AF"
+                                title="红石灯">红石灯</a>保持点亮，<a href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8"
+                                                           title="门">门</a>保持开启，<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97"
+                                title="漏斗">漏斗</a>保持锁定状态，<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a>保持伸出等）。
+                        </p>
+                        <p id="激活">所有机械元件都可以被下列方块激活（<i>例外：</i>
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a>不会被其活塞头朝向的方块常规激活）：
+                        </p>
+                        <ul>
+                            <li>毗邻的，处于开启状态的<b>电源</b>
+                                <dl>
+                                    <dd><i>例外：</i><a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                                            title="红石火把">红石火把</a>不会激活其附着的机械元件，<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E4%BE%A6%E6%B5%8B%E5%99%A8"
+                                            title="侦测器">侦测器</a>不会激活除其指向以外的方块。
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>毗邻的<b>充能方块</b>（强充能与弱充能均可）</li>
+                            <li>指向该机械元件的、输出信号的<b><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                                    title="红石比较器">红石比较器</a></b>或<b><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                    title="红石中继器">红石中继器</a></b></li>
+                            <li>指向该机械元件的、激活的<b>红石粉</b>，包括附着其上的红石粉。（毗邻的、但未指向机械元件的红石粉不会激活机械元件）</li>
+                        </ul>
+                        <p>部分机械元件可以用其他方式激活：</p>
+                        <ul>
+                            <li>在<a href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88"
+                                    title="Java版">Java版</a>中，<b><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8" title="发射器">发射器</a></b>、<b><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E6%8A%95%E6%8E%B7%E5%99%A8" title="投掷器">投掷器</a></b>与<b><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a></b>可以被以下方式激活：即如果上述4种方式作用于该机械元件正上方的那个方块（无论是何种方块，即使是空气也无妨），该机械元件也会被激活。正如<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8" title="门">门</a>的下半部分那样。这种情况也可以表述为：该元件可以被斜上方或上方2格的方块激活。右图即为这类激活方式的例子。
+                                这种方式被称为<b><a
+                                        href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E5%8D%8A%E8%BF%9E%E6%8E%A5%E6%80%A7"
+                                        title="教程/半连接性">半连接</a></b>。
+                            </li>
+                            <li><b>门</b>占2格空间，激活任意一半<a href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8"
+                                                       title="门">门</a>，另一半也会被激活。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 200px">
+                    <table style="margin-top: 20px;text-align: center">
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/red_stone_lamp_activation.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>红石灯的激活</td>
+                        </tr>
+                        <tr style="height: 50px"></tr>
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/activation_by_piston_connectivity.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: justify"><b>半连接方式</b>激活——活塞也可以被能够激活活塞之上空间的东西激活。请注意，最左侧的活塞并未被半连接激活，因为红石粉没有直接指向活塞上方的方块，因此无法激活该活塞
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content" style="width: 600px">
+                    <h3>充能与激活</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%94%B5%E8%B7%AF/%E5%85%85%E8%83%BD%E4%B8%8E%E6%BF%80%E6%B4%BB"
+                            title="红石电路/充能与激活">充能与激活</a></div>
+                    <div>
+                        <p id="充能与激活">对于属于实体方块的机械元件（包括<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4%E6%96%B9%E5%9D%97"
+                                title="命令方块">命令方块</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%8A%95%E6%8E%B7%E5%99%A8"
+                                title="投掷器">投掷器</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8"
+                                title="发射器">发射器</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%9F%B3%E7%AC%A6%E7%9B%92"
+                                title="音符盒">音符盒</a>与<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AF"
+                                title="红石灯">红石灯</a>等等），既可以被充能也可以被激活。因此区分它们是被激活还是被充能相当重要：</p>
+                        <ul>
+                            <li>如果它能够激活毗邻的红石元器件和机械元件，那么它就被<b>充能</b>了。</li>
+                            <li>如果它本身作出了一定的反应，那么它就被<b>激活</b>了。</li>
+                        </ul>
+                        <p>机械元件只要被充能就一定也会被激活，但被激活并不会一定会被充能（如被毗邻的充能方块激活）。</p>
+                        <p>不是实体方块的机械元件（<a href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8" title="门">门</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%A0%85%E6%A0%8F%E9%97%A8"
+                                title="栅栏门">栅栏门</a>、<a href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E"
+                                                       title="活塞">活塞</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97" title="漏斗">漏斗</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%93%81%E8%BD%A8" title="铁轨">铁轨</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E6%9D%BF%E9%97%A8"
+                                title="活板门">活板门</a>等等）可被激活并作出反应，但因为不具备实体方块的性质而无法被充能。</p>
+                    </div>
+                </div>
+                <div style="width: 200px">
+                    <table style="margin-top: 20px;text-align: center">
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/Activated_vs._powered.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: justify"><b>充能与激活</b> —
+                                上方的红石灯既被“激活”（因此红石灯点亮），也被“充能”（因此毗邻中继器被激活），但下方红石灯只是被“激活”，并未被“充能”
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>红石刻</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E5%88%BB" title="刻">刻</a>
+                        <div>
+                            <p><b>红石刻（Redstone tick）</b>简称<b>刻</b>或<b>rt</b>，也就是2游戏刻（如果没有卡顿等于0.1秒）。</p>
+                            <p id="红石刻">在<a href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88" title="Java版">Java版</a>中，因为多数红石元件需要1刻或更多时间改变状态，所以红石刻曾被定义为Minecraft更新红石元件状态的最小时间单位，曾被玩家在红石电路中广泛使用。随着对游戏机制的进一步了解，现在常把<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E5%88%BB" title="刻">游戏刻</a>（简称“gt”）作为最小时间单位。
+                            </p>
+                            <p>在<a href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88" title="基岩版">基岩版</a>中，大部分红石元件的信号通常每隔1游戏刻更新一次。因此红石刻既可以作为时间单位使用，等于2游戏刻；也可以用“红石刻”和“非红石刻”两个名词来指代某一游戏刻，以区分该游戏刻是否更新红石信号。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <span class="contents_title">基本种类</span>
+            <p style="text-indent: 2em;" id="基本种类">根据电路的原理及功能，中文区玩家将其分为三大模块和其他种类。</p>
+            <hr style="margin-top: 20px">
+
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>数字电路</h3>
+                    <div>
+                        <p>数字电路，简称数电，即通过游戏所给的逻辑机制（或、非）来实现逻辑运算。</p>
+                        <p>数字电路一般是基于二进制运算法则和逻辑运算来实现各种运算，从而实现各种复杂的计算机和计算器。</p>
+                        <p id="数字电路">数字电路在现实中是一门学科，所以如果没有知识基础，数字电路这个领域对普通玩家来说是十分复杂而高深的。</p>
+                        <p>由于数字电路里实现各种复杂的数学运算多使用到加法器，所以数电圈里有一句话：数电万物皆可加。</p>
+                        <p>数电相较于模电，速度较快，体积较大。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>红石模拟电路</h3>
+                    <div style="background: #f8f9fa">
+                        <div><b>现实生活中“模拟”与Minecraft中的区别</b></div>
+                        <div>
+                            <p style="margin: 0;">
+                                “<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7"
+                                    title="wzh:模拟信号">模拟</a>”意为“连续变化”。这并不符合Minecraft中的只有16格离散值的模拟线路（例如，13.43强度的信号并不存在）。但这里使用“模拟”一词是为了区分信号强度传输与0/1传输，现实生活中也只有数字电子技术（仅传输高电压或低电压）与模拟电子技术（重在连续变化的电势）之间的区别与其最为相似了。因此“模拟”与“数字”的叫法被各大Minecraft社区所采用。
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="红石模拟电路">
+                            红石模拟电路，简称模电，即利用比较器的比较、减法模式来对模拟信号的处理与运算。现实中的模拟电路是连续的信号强度，而红石模拟电路是离散的信号强度，所以和现实模拟电路还是有区别的，不能混为一谈。</p>
+                        <p>由于红石模拟电路里实现各种复杂的数学运算多使用到比较器，所以模电圈里有一句话：红模万物皆可减。</p>
+                        <p>模电相较于数电，速度较慢，体积较小。</p>
+                        <p>红石模拟电路主要分为弱信号模拟电路和强信号模拟电路。有的模拟电路也会使用小于0的红石信号进行计算。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4>红石弱信号模拟电路</h4>
+                    <div>
+                        <p id="红石弱信号模拟电路">红石弱信号模拟电路，简称弱模。</p>
+                        <p>弱模是基于0~15的红石模拟信号的处理与运算，运算规则一般基于16进制或10进制。</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4>红石强信号模拟电路</h4>
+                    <div>
+                        <p>红石强信号模拟电路，简称强模。</p>
+                        <p id="红石强信号模拟电路">
+                            比较器可以最大可以寄存2,147,483,647信号强度，而红石线最大只能寄存0~15红石强度。强模是对比较器中的15~2,147,483,647信号强度的模拟信号进行的运算与处理。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <span class="contents_title">基本电路</span>
+            <p style="text-indent: 2em;" id="基本电路">
+                虽然建造电路的方法无穷无尽，但特定功能的电路建造样式是比较固定的。下面的章节对一些电路进行了分类，每个章节有独立的主条目用于描述具体的电路设计方案。</p>
+            <p style="text-indent: 2em;">某些电路可能只能完成最简单的控制功能，但可以将此类简单电路组成复杂的、能够满足机械需要的大型电路。</p>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>脉冲电路</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E8%84%89%E5%86%B2%E7%94%B5%E8%B7%AF"
+                            title="脉冲电路">脉冲电路</a></div>
+                    <div>
+                        <p>一些电路需要特定长度的脉冲，也有一些电路用脉冲长度传达特定信息。脉冲电路派上了用场。</p>
+                        <p>在一个状态稳定，另一个状态不稳定的电路通常称为<b>单稳态电路（monostable circuit）</b>。大多数脉冲电路属于单稳态电路，因为它们的激活态（非稳态）只能持续较短时间就回到稳定态。
+                        </p>
+                        <ul>
+                            <li>脉冲发生器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>脉冲发生器产生特定长度的脉冲。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>脉冲限制器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd id="脉冲电路">脉冲限制器（又称脉冲缩短器）可以缩短过长的脉冲。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>脉冲稳定器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>脉冲稳定器（又称脉冲延长器）可以延长过短的脉冲。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>脉冲延迟</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>脉冲延迟电路能够为脉冲提供延迟。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>边沿感应器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>边沿感应器在信号变化时输出脉冲：从0到1（“上升沿”感应器）或从1到0（“下降沿”感应器），或两者均感应（“双边沿”感应器）。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>脉冲长度识别器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>脉冲长度识别器能够在输入脉冲长度在某个范围内时输出信号。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>时钟电路</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E6%97%B6%E9%92%9F%E7%94%B5%E8%B7%AF"
+                            title="时钟电路">时钟电路</a></div>
+                    <div>
+                        <p>时钟电路为持续、重复提供特定长度脉冲的脉冲发生器。一些时钟电路可以永久工作，另一些则可控。
+                        </p>
+                        <p>从一次脉冲的开始到下一次脉冲的开始之间的时间长度被称为时钟电路的<b>周期</b>。在一个周期中，一次脉冲的长度与这个周期的总长度的比值叫做<b>占空比</b>。
+                        </p>
+                        <p>简单的时钟电路只有两个等长的状态（占空比为50%）。例如5刻激活与5刻非激活的时钟被称为5刻时钟。
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                   title="红石中继器">中继器</a>时钟
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd id="时钟电路">利用<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                            title="红石中继器">中继器</a>（链）获得时钟电路中必要的延迟的电路。通常需要<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                                            title="红石火把">红石火把</a>以获得反相功能。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li><a href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97"
+                                   title="漏斗">漏斗</a>时钟
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd><a href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97"
+                                           title="漏斗">漏斗</a>时钟通过<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97"
+                                            title="漏斗">漏斗</a>链循环传递物品，并通过<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                                            title="红石比较器">红石比较器</a>侦测输出。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li><a href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E"
+                                   title="活塞">活塞</a>时钟
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>利用<a href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E"
+                                             title="活塞">活塞</a>对方块的推拉完成电路的反相功能。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>其他时钟</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>时钟电路也可以基于<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E9%98%B3%E5%85%89%E6%8E%A2%E6%B5%8B%E5%99%A8"
+                                            title="阳光探测器">阳光探测器</a>、<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E7%9F%BF%E8%BD%A6"
+                                            title="矿车">矿车</a>、<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E8%88%B9"
+                                            title="船">船</a>、掉落物品的自然消失、<a
+                                            href="https://minecraft.fandom.com/zh/wiki/%E6%B0%B4"
+                                            title="水">水</a>的流动等。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>传输电路</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E4%BC%A0%E8%BE%93%E7%94%B5%E8%B7%AF"
+                            title="传输电路">传输电路</a></div>
+                    <div>
+                        <p id="传输电路">只使用传输元件进行信号传输，无法满足远距离传输的需求。因此需要传输电路的辅助</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4><a href="https://minecraft.fandom.com/zh/wiki/%E4%BC%A0%E8%BE%93%E7%94%B5%E8%B7%AF#中继器"
+                           title="传输电路">中继器</a></h4>
+                    <div>
+                        <p id="中继器">“中继”信号指的是将信号加强到15信号强度。最简单的方法就是使用<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                title="红石中继器">红石中继器</a>。也可以使用如下电路：
+                        </p>
+                        <ol>
+                            <li><i><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E4%BC%A0%E8%BE%93%E7%94%B5%E8%B7%AF#瞬时中继器"
+                                    title="传输电路">瞬时中继器</a>：</i> 在不引入延迟的情况下中继信号。
+                            </li>
+                            <li><i><a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E4%BC%A0%E8%BE%93%E7%94%B5%E8%B7%AF#双向中继器"
+                                    title="传输电路">双向中继器</a>：</i> 可以从来回两个方向中继信号。
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4><a href="https://minecraft.fandom.com/zh/wiki/%E4%BC%A0%E8%BE%93%E7%94%B5%E8%B7%AF#二极管"
+                           title="传输电路">二极管</a></h4>
+                    <div>
+                        <p id="二极管">“二极管”指只允许信号单向传输的电路，通常用于防止电路反向干扰引起的状态改变或延迟紊乱，也可以用于防止大型电路中的线路彼此串扰。常用的二极管包括<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E4%B8%AD%E7%BB%A7%E5%99%A8"
+                                title="红石中继器">红石中继器</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E6%AF%94%E8%BE%83%E5%99%A8"
+                                title="红石比较器">红石比较器</a>、使用荧石、楼梯或台阶组成的红石梯。
+                        </p>
+                        <p>很多电路已经具有单向性，因为它们的输出端不会接受输入信号，例如以附着在方块侧面的红石火把（非门）作为输出的电路。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content" style="width: 600px;">
+                    <h4>纵向传输电路</h4>
+                    <div>
+                        <p>虽然横向传输较为直接，但纵向传输有时具有更好的适应性与集成性。下面列举了一些简易的纵向传输电路：</p>
+                        <p><b>红石楼梯</b>
+                        </p>
+                        <p>最简单的纵向传输就是在斜向上的方块上铺设<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%BA%BF"
+                                class="mw-redirect"
+                                title="红石线">红石线</a>，或是使用2×2的螺旋结构等等。红石楼梯既能够向上也能向下传输信号，无延迟，但占地庞大，每15个就需要中继。
+                        </p>
+                        <p id="纵向传输电路"><b>红石梯子</b>
+                        </p>
+                        <p>因为<a href="https://minecraft.fandom.com/zh/wiki/%E8%8D%A7%E7%9F%B3%E5%9D%97"
+                                class="mw-redirect" title="荧石块">荧石块</a>、倒置<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%A5%BC%E6%A2%AF" title="楼梯">楼梯</a>与<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%8F%B0%E9%98%B6" title="台阶">台阶</a>上方能够放置红石线的同时不会隔断红石线，信号就能够在2×1的“梯子”上纵向传输，但仅能<b>向上传输</b>，这也相当于一个纵向的二极管。红石梯子占地小，无延迟，但每15个就需要中继。在<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88"
+                                title="基岩版">基岩版</a>中，可以通过漏斗或玻璃形成1×2的梯式纵向<b>双向</b>传输。
+                        </p>
+                        <p><b>火把高塔</b>
+                        </p>
+                        <p><a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AB%E6%8A%8A"
+                              title="红石火把">红石火把</a>能够充能其上方的方块并激活毗邻的红石线，这样，纵向传输便成为可能（向上与向下的设计不同）。无需中继，占地小，但会引入不小的延迟。
+                        </p>
+                        <p><b><a href="https://minecraft.fandom.com/zh/wiki/%E4%BE%A6%E6%B5%8B%E5%99%A8"
+                                 title="侦测器">侦测器</a>和<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89"
+                                title="红石粉">红石粉</a>（或<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%BF%80%E6%B4%BB%E9%93%81%E8%BD%A8"
+                                title="激活铁轨">激活铁轨</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%92%9F" title="钟">钟</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8"
+                                title="发射器">发射器</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%97%A8" title="门">门</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%8A%95%E6%8E%B7%E5%99%A8"
+                                title="投掷器">投掷器</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%A0%85%E6%A0%8F%E9%97%A8"
+                                title="栅栏门">栅栏门</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%BC%8F%E6%96%97" title="漏斗">漏斗</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%9F%B3%E7%AC%A6%E7%9B%92"
+                                title="音符盒">音符盒</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E5%A1%9E" title="活塞">活塞</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%8A%A8%E5%8A%9B%E9%93%81%E8%BD%A8"
+                                title="动力铁轨">动力铁轨</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E9%93%81%E8%BD%A8" title="铁轨">铁轨</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%81%AF"
+                                title="红石灯">红石灯</a>、<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%B4%BB%E6%9D%BF%E9%97%A8"
+                                title="活板门">活板门</a>、仅用侦测器）</b>
+                        </p>
+                        <p>一个<a href="https://minecraft.fandom.com/zh/wiki/%E4%BE%A6%E6%B5%8B%E5%99%A8"
+                                title="侦测器">侦测器</a>可以激活上方或下方的<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89"
+                                title="红石粉">红石粉</a>，因此可以实现纵向<b>双向</b>传输。当侦测器面朝上或朝下的时候，在它的上面和下面放置<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E7%B2%89"
+                                title="红石粉">红石粉</a>，就会产生一个脉冲，再在它的上面或下面再使用一个<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E4%BE%A6%E6%B5%8B%E5%99%A8"
+                                title="侦测器">侦测器</a>检测这个脉冲并产生新的脉冲，重复这个模式意味着脉冲将被持续传输。
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 200px;">
+                    <table style="margin-top: 20px;text-align: center">
+                        <tr style="height: 20px"></tr>
+
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/MCRedstone_VertTransPositive.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>向上纵向传输</td>
+                        </tr>
+                        <tr style="height: 20px"></tr>
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/MCRedstone_VertTransNegative.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>向下纵向传输</td>
+                        </tr>
+                        <tr style="height: 20px"></tr>
+
+                        <tr>
+                            <td><img src="../assets/images/redstone_system/PE_Vertical_Redstone_Ladder.webp"
+                                     style="width: 200px" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>基岩版中的双向垂直梯子</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h4>杂项传输电路</h4>
+                    <div>
+                        <dl>
+                            <dt>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%98%B3%E5%85%89%E6%8E%A2%E6%B5%8B%E5%99%A8"
+                                   title="阳光探测器"><b>阳光探测器</b></a><b>传输</b>
+                            </dt>
+                            <dd>利用在晴天的白天太阳光无遮挡时恒为15级亮度，可以制造一种白天的长距离垂直传输装置（其他方向难度大、距离短）。</dd>
+                            <dd id="杂项传输电路">这样，当阳光探测器在一个只有顶上开口的不透光柱子内时，顶部开口被活塞推动打开或关闭时，下面传出信号（阳光探测器有明暗探测两种模式）。</dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="https://minecraft.fandom.com/zh/wiki/%E5%AE%9E%E4%BD%93"
+                                   title="实体"><b>实体</b></a><b>传输</b>
+                            </dt>
+                            <dd>
+                                主要包括利用弹射、坠落、气泡柱升降移动实体到感应位置，可以自带复位（两个单项的收发反向重合），通常距离越远实体速度越快，不确定性大，多使用火焰弹，需要对游戏机制有一定了解。
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>逻辑电路</h3>
+                    <table class="wiki_table" style="float: right; margin: 0 0 0.5em 0.5em; text-align: center;">
+                        <caption>逻辑门输出<br/>
+                            <span style="font-weight: normal">显示每个输入A与B（绿色）的组合所对应的<br>逻辑门的输出（红色）</span>
+                        </caption>
+                        <tbody>
+                        <tr>
+                            <th>A
+                            </th>
+                            <th class="tc-in-on">开</th>
+                            <th class="tc-in-on">开</th>
+                            <th class="tc-in-off">关</th>
+                            <th class="tc-in-off">关
+                            </th>
+                            <th rowspan="2">对应语言表述
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>B
+                            </th>
+                            <th class="tc-in-on">开</th>
+                            <th class="tc-in-off">关</th>
+                            <th class="tc-in-on">开</th>
+                            <th class="tc-in-off">关
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#非门"
+                                   title="逻辑电路">非A</a>
+                            </td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开
+                            </td>
+                            <td style="text-align: left;">A为0吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#或门"
+                                   title="逻辑电路">A或B</a>
+                            </td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-off">关
+                            </td>
+                            <td style="text-align: left;">有输入为1吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#或非门"
+                                   title="逻辑电路">A或非B</a>
+                            </td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开
+                            </td>
+                            <td style="text-align: left;">两个输入均为0吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#与门"
+                                   title="逻辑电路">A与B</a>
+                            </td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关
+                            </td>
+                            <td style="text-align: left;">两个输入均为1吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#与非门"
+                                   title="逻辑电路">A与非B</a>
+                            </td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开
+                            </td>
+                            <td style="text-align: left;">有输入为0吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#异或门"
+                                   title="逻辑电路">A异或B</a>
+                            </td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-off">关
+                            </td>
+                            <td style="text-align: left;">两个输入不同吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#同或门"
+                                   title="逻辑电路">A同或B</a>
+                            </td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开
+                            </td>
+                            <td style="text-align: left;">两个输入相同吗？
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#蕴含门"
+                                   title="逻辑电路">A蕴含B</a>
+                            </td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-off">关</td>
+                            <td class="tc-out-on">开</td>
+                            <td class="tc-out-on">开
+                            </td>
+                            <td style="text-align: left;">如果A为1，B也为1吗？
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF"
+                            title="逻辑电路">逻辑电路</a></div>
+                    <div class="hat-note">参见：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E5%9F%BA%E6%9C%AC%E9%80%BB%E8%BE%91%E9%97%A8"
+                            title="教程/基本逻辑门">教程/基本逻辑门</a></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#非门"
+                                   title="逻辑电路">非门</a></li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>非门（即“反相器”）的输入与输出相反。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#或门"
+                                   title="逻辑电路">或门</a></li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>或门在任意一个输入为1时，输出为1。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#或非门"
+                                   title="逻辑电路">或非门</a>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd id="逻辑电路">或非门在任意一个输入为1时，输出为0。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#与门"
+                                   title="逻辑电路">与门</a></li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>与门在所有输入都为1时，输出为1。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#与非门"
+                                   title="逻辑电路">与非门</a>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>与非门在所有输入都为1时，输出为0。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#异或门"
+                                   title="逻辑电路">异或门</a>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>异或门在输入不同时，输出为1。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#同或门"
+                                   title="逻辑电路">同或门</a>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>同或门在输入相同时，输出为1。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <a href="https://minecraft.fandom.com/zh/wiki/%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF#蕴含门"
+                                   title="逻辑电路">蕴含门</a>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>蕴含门仅当第一个输入为1，第二个输入为0时，输出为0。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>记忆电路</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E8%AE%B0%E5%BF%86%E7%94%B5%E8%B7%AF"
+                            title="记忆电路">记忆电路</a></div>
+                    <div>
+                        <p>
+                            与逻辑电路永远反映输入信号不同，记忆电路的输出不单与输入相关，还与“过去的输入”相关。这样能够完成对电路过去状态的“记忆”。在现实生活中的电子学中，<b>锁存器（Latch）</b>指对输入信号的某个状态产生反应的电路；<b>触发器（Flip-flop）</b>指对输入信号的变化产生反应的电路。
+                        </p>
+                        <ul>
+                            <li>RS锁存器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>
+                                        RS锁存器有2个输入。输入端为S（Set改变状态）端与R（Reset重置状态）端：S端输入一旦变成1，输出就为1并保持；R端输入一旦变成1，输出就为0并保持。最简单的RS锁存器为知名的“RS或非锁存器”，其为Minecraft最古老也是最常见的记忆电路。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li id="记忆电路">T触发器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>T触发器用于信号切换（类似拉杆）。T触发器具有“clock（时钟）”输入端。输入端满足特定条件时，则翻转输出信号（1变为0，0变为1）。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>D触发器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>具有“data（数据）”输入端与“clock（时钟）”输入端。输入端满足激活条件时，输出端会变成此刻数据输入端相同的状态。</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <ul>
+                            <li>JK触发器</li>
+                        </ul>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>
+                                        和RS锁存器相似，但RS锁存器不支持R端和S端同时为1，而JK触发器在J端和K端同时为1时则翻转输出信号（1变为0，0变为1）。现实中用它来实现t触发器和d触发器，但在游戏中用处不大。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <p>还有很多记忆电路可供选择。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+
+            <div class="part_content indent">
+                <div class="part_body_content pbc_width">
+                    <h3>杂项电路</h3>
+                    <div class="hat-note">主条目：<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E6%9D%82%E9%A1%B9%E7%94%B5%E8%B7%AF"
+                            title="杂项电路">杂项电路</a></div>
+                    <div>
+                        <dl>
+                            <dt><b>随机信号发生器</b></dt>
+                            <dd>随机信号发生器能够随机产生无法预测的信号。一些随机信号发生器利用了Minecraft的随机特性（例如<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E4%BB%99%E4%BA%BA%E6%8E%8C"
+                                    title="仙人掌">仙人掌</a>生长或<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E5%8F%91%E5%B0%84%E5%99%A8"
+                                    title="发射器">发射器</a>对发射槽的选择）；另一些则采用数学上的伪随机算法。
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><b>示波器</b></dt>
+                            <dd>示波器为依次连接的中继器链，据此能够通过点亮的中继器数量直观地测量脉冲长度。</dd>
+                        </dl>
+                        <dl>
+                            <dt><b>计数器</b></dt>
+                            <dd id="杂项电路">计数器（Counter）是用于记录输入脉冲数量的装置，基本结构为级联的边沿触发型触发器。</dd>
+                        </dl>
+                        <dl>
+                            <dt><b>方块更新感应器</b></dt>
+                            <dd>
+                                <div class="hat-note">参见：<a
+                                        href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8"
+                                        title="教程/方块更新感应器">教程/方块更新感应器</a></div>
+                            </dd>
+                            <dd>方块更新感应器（<b>B</b>lock <b>U</b>update <b>D</b>detector，缩写为BUD）为能够对方块的变化产生反应的电路（例如石头被挖掘，水变成冰，南瓜长出等等）。单稳态BUD通过产生脉冲作出反应，而T-BUD（双稳态BUD）通过切换其输出状态作出反应。BUD的自复位通常依赖于活塞。<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E4%BE%A6%E6%B5%8B%E5%99%A8"
+                                    title="侦测器">侦测器</a>也被认为是BUD的一种。
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><b>多输入电路</b></dt>
+                            <dd>多输入电路能够同时处理多个输入并得出综合输出。此类电路是建造计算器、数字钟与基本计算机的基石。</dd>
+                        </dl>
+                        <dl>
+                            <dt><b>数据分配器与继电器</b></dt>
+                            <dd>数据分配器为逻辑门的高级形式之一，选择端的输入信号决定输出端输出与哪个输入端的数据。</dd>
+                        </dl>
+                        <p>爱好者们还有很多更复杂的电路方案。
+                        </p>
+                        <div class="hat-note">参见：<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E9%AB%98%E7%BA%A7%E7%BA%A2%E7%9F%B3%E7%94%B5%E8%B7%AF"
+                                title="教程/高级红石电路">教程/高级红石电路</a></div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div style="height: 25px"></div>
+        </div>
+        <div class="scrollTo">
+            <a href=javascript:void(0) id="scrollTo">
+                <img src="../assets/images/icon/scrollTo.png" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

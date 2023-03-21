@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .changeColor {
+            background-color: #FF0 !important;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h2").css("backgroundColor", "#bbffaa");
+            $("#myUL li:nth-child(odd)").css("backgroundColor", "red");
+            $("#footerUL li").addClass("footerLi");
+            $("p:eq(1)").css({color: "blue", fontSize: "20px", fontStyle: "italic"});
+            $("body>").on("mouseover mouseout", "*:not(ul)", function () {
+                $(this).toggleClass("changeColor")
+            });
+            $("#gogo").click(function () {
+                var button = $("#myBody");
+                if (button.css("display") === "none") {
+                    button.slideDown();
+                } else if (button.css("display") !== "none") {
+                    button.slideUp();
+                }
+            });
+            $("#cal").click(function () {
+                var d1 = $("#d1").val();
+                var d2 = $("#d2").val();
+                var d3 = $("#d3");
+                var op = $("#op").val();
+                var regex = /^[0-9]*$/;
+                if (regex.test(d1) && regex.test(d2)) {
+                    d1 = Number(d1);
+                    d2 = Number(d2);
+                    if (op === "+") {
+                        d3.val(d1 + d2);
+                    } else if (op === "-") {
+                        d3.val(d1 - d2);
+                    } else if (op === "*") {
+                        d3.val(d1 * d2);
+                    } else if (op === "/") {
+                        d3.val(d1 / d2);
+                    } else {
+                        alert("符号错误");
+                    }
+                } else {
+                    alert("请输入数字");
+                }
+                $("#d1,#d2").val("");
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="myHead">
+    <h2 align="center">jQuery</h2>
+    <p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write
+        Less，Do
+        More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+    <p>jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE
+        6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等。</p>
+</div>
+<div id="myBody">
+    <h2>语言特点</h2>
+    <ul id="myUL">
+        <li>快速获取文档元素</li>
+        <li>提供漂亮的页面动态效果</li>
+        <li>创建AJAX无刷新网页</li>
+        <li>提供对JavaScript语言的增强</li>
+        <li>增强的事件处理</li>
+        <li>更改网页内容</li>
+    </ul>
+</div>
+<p>
+    <input name="go" type="button" value="GO" id="gogo"/>
+</p>
+<p>
+    <input name="d1" type="text" id="d1" width="50"/>
+    <select name="op" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input name="d2" type="text" id="d2" width="50"/>
+    =
+    <input name="d3" type="text" id="d3" width="50"/>
+</p>
+<p><input type="button" value="计算" id="cal"/>&nbsp;</p>
+
+
+<div id="myFooter">
+    <ul id="footerUL">
+        <li>帮助</li>
+        <li>关于我们</li>
+        <li>联系我们</li>
+    </ul>
+</div>
+</body>
+</html>

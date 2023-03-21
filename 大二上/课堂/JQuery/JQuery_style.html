@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery_style</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $().ready(function () {
+            // 默认: 400ms
+            $("#myButton").click(function () {
+                $("#myP").fadeOut("fast");
+            });
+            $("#myButton1").click(function () {
+                $("#myP").fadeIn(2000);
+            });
+            $("#myButton2").click(function () {
+                $("#myP").fadeTo(1000, 0.5);
+            });
+            $("#myButton3").click(function () {
+                $("#myP").toggle(2000);
+            });
+            $("#myButton4").click(function () {
+                $("#myUL").delay(2000).slideUp(function() {
+                    alert("slideUp");
+                });
+            });
+            $("#myButton5").click(function () {
+                $("#myUL").slideDown(function() {
+                    alert("slideDown");
+                });
+            });
+            $("#myButton6").click(function () {
+                $("#myUL").slideToggle();
+            });
+            $("#myButton7").click(function () {
+                $("#myUL").stop();
+            });
+            $("#myButton8").click(function () {
+                try_Js_function()
+            });
+            $("#myButton9").on("click", try_Js_function);
+        });
+
+        function try_Js_function() {
+            alert("try Js function");
+        }
+    </script>
+</head>
+<body>
+<p id="myP">this is my p</p>
+<button id="myButton">fadeOut</button>
+<button id="myButton1">fadeIn</button>
+<button id="myButton2">fadeTo</button>
+<button id="myButton3">Toggle</button>
+<br>
+<ul id="myUL">
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+</ul>
+<button id="myButton4">slideUp</button>
+<button id="myButton5">slideDown</button>
+<button id="myButton6">slideToggle</button>
+<button id="myButton7">stop</button>
+<button id="myButton8">try Js function</button>
+<button id="myButton9">try Js function(on)</button>
+</body>
+</html>

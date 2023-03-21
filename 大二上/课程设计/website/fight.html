@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教程/战斗 — Minecraft百科</title>
+    <link rel="Shortcut Icon" href="../assets/images/icon/crafting_table_logo.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fight.css"/>
+    <script src="../assets/libs/jquery-3.3.1.js"></script>
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/fight.js"></script>
+</head>
+<body>
+<section>
+    <div class="main_menu">
+        <ul>
+            <li>
+                <div id="logo">
+                    <img src="../assets/images/logo/logo_reverse.png" alt="logo">
+                </div>
+            </li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="https://mc.163.com/20190918/31450_833241.html">游戏简介</a></li>
+            <li><a href="index.html#content" id="gameplay">游戏内容</a></li>
+            <li><a href="#">入门教程</a></li>
+            <li><a href="https://www.mcbbs.net/forum-news-1.html">更新日志</a></li>
+            <li><a href="index.html#jumpAdvanced" id="advanced">技术与开发</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="drop_button">开始游戏</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.minecraft.net/">Minecraft官网</a>
+                        <a href="https://mc.163.com/">中国版官网</a>
+                        <a href="https://www.mcbbs.net/">MCBBS论坛</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="head_portrait_button" href="login.html">
+                    <img src="../assets/images/icon/head_portrait.png" alt="" class="head_portrait">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div style="height: 68px;"></div>
+    <div class="main">
+        <div class="contents">
+            <ul>
+                <li id="contents">
+                    <a href=javascript:void(0) id="content">
+                        <span>目录</span></a></li>
+                <li><a href=javascript:void(0) id="equipment">
+                    <span class="toc-text">1 装备</span></a>
+                    <ul>
+                        <li><a href=javascript:void(0) id="sword">
+                            <span class="toc-text">1.1 剑</span></a></li>
+                        <li><a href="javascript:void(0)" id="axe">
+                            <span class="toc-text">1.2 斧</span></a></li>
+                        <li><a href="javascript:void(0)" id="bow">
+                            <span class="toc-text">1.3 弓</span></a></li>
+                        <li><a href="javascript:void(0)" id="crossbow">
+                            <span class="toc-text">1.4 弩</span></a></li>
+                        <li><a href="javascript:void(0)" id="trident">
+                            <span class="toc-text">1.5 三叉戟</span></a></li>
+                        <li><a href="javascript:void(0)" id="bucket">
+                            <span class="toc-text">1.6 桶</span></a>
+                            <ul>
+                                <li><a href="javascript:void(0)" id="water_bucket">
+                                    <span class="toc-text">1.6.1 水桶</span></a></li>
+                                <li><a href="javascript:void(0)" id="lava_bucket">
+                                    <span class="toc-text">1.6.2 熔岩桶</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <li><a href="javascript:void(0)" id="战斗方式_" class="interval">
+                    <span class="toc-text">2 战斗方式</span></a>
+                    <ul>
+                        <li><a href="javascript:void(0)" id="近身战_">
+                            <span class="toc-text">2.1 近身战</span></a></li>
+                        <li><a href="javascript:void(0)" id="隐身刺客_">
+                            <span class="toc-text">2.2 隐身刺客</span></a></li>
+                        <li><a href="javascript:void(0)" id="连弩_">
+                            <span class="toc-text">2.3 连弩</span></a></li>
+                        <li><a href="javascript:void(0)" id="弓箭战_">
+                            <span class="toc-text">2.4 弓箭战</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" id="附魔_" class="interval">
+                    <span class="toc-text">3 附魔</span></a>
+                    <ul>
+                        <li><a href="javascript:void(0)" id="剑的附魔_">
+                            <span class="toc-text">3.1 剑的附魔</span></a></li>
+                        <li><a href="javascript:void(0)" id="弓的附魔_">
+                            <span class="toc-text">3.2 弓的附魔</span></a></li>
+                        <li><a href="javascript:void(0)" id="盔甲的附魔_">
+                            <span class="toc-text">3.3 盔甲的附魔</span></a></li>
+                        <li><a href="javascript:void(0)" id="三叉戟的附魔_">
+                            <span class="toc-text">3.4 三叉戟的附魔</span></a></li>
+                        <li><a href="javascript:void(0)" id="弩的附魔_">
+                            <span class="toc-text">3.5 弩的附魔</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="message">
+            <p class="contents_main">教程/战斗</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无论是击败末影龙，或者为了火药击杀苦力怕，还是为了赢得PvP比赛，战斗都是Minecraft中一个重要的环节。本页列出了击败游戏中每个敌对生物的最佳方法以及许多的战斗策略。</p>
+            <span class="contents_title" id="装备">装备</span>
+            <hr style="margin-top: 20px">
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h3>剑</h3>
+                    <div class="hat-note" id="content_">主条目：
+                        <a href="https://minecraft.fandom.comhttps://minecraft.fandom.com/zh/wiki/%E5%89%91"
+                           title="剑">剑</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>直接进攻</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>近身搏斗</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>根据材料而定</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        作为日常的主要武器，是最通用的、有效的和便宜的。剑的伤害和耐久，还有获取的经验取决于制作的材料（黄金除外）。剑比起空手具有更大的伤害，将在很大程度上增加正在面临着敌对怪物玩家的生存机会。即使是木剑，剑的最低级别，也会造成四倍于拳头的伤害。每上升一级的制作材料（例如木剑升级为石剑）都会增加
+                        <span class="nowrap">1（<span class="pixel-image nowrap" title="1 点生命值"><img alt="♥"
+                                                                                                    src="../assets/images/icon/Half_Heart_29.webp"></span>）</span>的伤害。金剑是一个例外，它是攻击力最低、耐久最少的剑。在
+                        <a href="https://minecraft.fandom.comhttps://minecraft.fandom.com/zh/wiki/Java%E7%89%881.8"
+                           title="Java版1.8">Java版1.8</a>
+                        及以前，剑是唯一具有格挡效果的工具，从而降低近战和远程攻击怪物一半的伤害。包括剑在内，任何武器都有一个耐久值，当耐久值=0，代表着该武器会消失。同样的，高一级的剑，拥有更高的耐久值，每级大约增加一倍，钻石剑的耐久比铁剑增加了五倍。附魔的剑也可以大大的增加剑的力量。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="1">
+                        <img src="../assets/images/icon/sword/wooden_sword.webp" alt="image 1">
+                        <img src="../assets/images/icon/sword/stone_sword.webp" alt="image 2">
+                        <img src="../assets/images/icon/sword/iron_sword.webp" alt="image 3">
+                        <img src="../assets/images/icon/sword/golden_sword.webp" alt="image 4">
+                        <img src="../assets/images/icon/sword/diamond_sword.webp" alt="image 5">
+                        <img src="../assets/images/icon/sword/netherite_sword.webp" alt="image 6">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="剑"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                              title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                                <th><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81%E8%80%90%E4%B9%85"
+                                       title="物品耐久">
+                                    耐久度</a></th>
+                                <td><p><b>木质</b>：59<br/>
+                                    <b>石质</b>：131<br/>
+                                    <b>铁质</b>：250<br/>
+                                    <b>金质</b>：32<br/>
+                                    <b>钻石质</b>：1561<br/>
+                                    <b>下界合金质</b>：2031</p></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p><b>下界合金剑</b>：否<br/><b>其他</b>：是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h3>斧</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E6%96%A7" title="斧">斧</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>直接进攻</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>近身毁灭性打击</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>视材料而定</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        只要用的好，斧能够对对方造成毁灭性的打击。玩家应该要注意，金斧的伤害和木斧一样（但是攻击速度较快）。木斧拥有与钻石剑一样的攻击力，石斧则有比钻石剑还高的攻击力（锋利III的钻石剑或拉满的弓的攻击力）。如果用斧造成暴击，所造成的伤害是剑远远不能比的。但是斧有个问题，那就是它的攻击速度很慢（斧攻击一次剑大约可以攻击两次），所以它不如剑好用。不过如果一个玩家拿了盾牌，你的剑所造成的伤害都会被盾牌挡住。这次可以用斧破盾，然后用剑狠狠地砍他。还有就是你和敌人将要相接的时候，你可以先把斧拿出来，这样你到他跟前的时候斧已经冷却完成了。这时可以用斧给他来一次暴击，这样他会受到很大的伤害，然后切换到剑再攻击他，这样很容易杀死对方（只要他没有高级护甲）。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="2">
+                        <img src="../assets/images/icon/axe/Wooden_Axe_JE2_BE2.webp" alt="image 1">
+                        <img src="../assets/images/icon/axe/Stone_Axe_JE2_BE2.webp" alt="image 2">
+                        <img src="../assets/images/icon/axe/Iron_Axe_JE5_BE2.webp" alt="image 3">
+                        <img src="../assets/images/icon/axe/Golden_Axe_JE3_BE2.webp" alt="image 4">
+                        <img src="../assets/images/icon/axe/Diamond_Axe_JE3_BE3.webp" alt="image 5">
+                        <img src="../assets/images/icon/axe/Netherite_Axe_JE2_BE2.webp" alt="image 6">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="斧"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                              title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                                <th><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81%E8%80%90%E4%B9%85"
+                                       title="物品耐久">
+                                    耐久度</a></th>
+                                <td><p><b>木质</b>：59<br/>
+                                    <b>石质</b>：131<br/>
+                                    <b>铁质</b>：250<br/>
+                                    <b>金质</b>：32<br/>
+                                    <b>钻石质</b>：1561<br/>
+                                    <b>下界合金质</b>：2031</p></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p><b>下界合金剑</b>：否<br/><b>其他</b>：是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h3>弓</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E5%BC%93" title="弓">弓</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td style="width: 32px;text-align: center">类型</td>
+                            <td>直接攻击</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>远程</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>未拉弓：<span class="nowrap">1（<span class="pixel-image nowrap" title="1 点生命值"><img alt="♥"
+                                                                                                                src="../assets/images/icon/Half_Heart_29.webp"></span>）</span>，拉一半：<span
+                                    class="nowrap">6（<span class="pixel-image nowrap" title="6 点生命值"><img alt="♥"
+                                                                                                          src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"></span>）</span>，拉满：<span
+                                    class="nowrap">9（<span class="pixel-image nowrap" title="9 点生命值"><img alt="♥"
+                                                                                                          src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/Half_Heart_29.webp"></span>）</span>-<span
+                                    class="nowrap">10（<span class="pixel-image nowrap" title="10 点生命值"><img alt="♥"
+                                                                                                            src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"></span>）</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>弓是范围较远、最方便使用、同时也是游戏中最常被使用的远程武器。但是，它需要使用箭来作为弹药。弓也可以被<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E9%99%84%E9%AD%94" title="附魔">附魔</a>，这极大地提升了它的实用性。这些附魔种类包括：火矢：使所有由这把弓射出的箭都被点着并且击中目标时造成火焰伤害，类似于剑的火焰附加；或者是无限箭矢，来帮助那些获得足够弹药有困难、或者瞄准技巧很差的玩家：只要背包里有至少一支箭（药箭和光灵箭除外）就能无限射击。同时还有力量和冲击附魔，可以提高玩家箭造成的伤害或造成击退，就像剑的锋利和击退附魔一样。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="3">
+                        <img src="../assets/images/icon/bow/Bow_JE2_BE1.webp" alt="image 1">
+                        <img src="../assets/images/icon/bow/Bow_29_JE1_BE2.webp" alt="image 2">
+                        <img src="../assets/images/icon/bow/Bow_29_JE1_BE3.webp" alt="image 3">
+                        <img src="../assets/images/icon/bow/Bow_29_JE1_BE4.webp" alt="image 4">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="弓"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                              title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                                <th><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81%E8%80%90%E4%B9%85"
+                                       title="物品耐久">
+                                    耐久度</a></th>
+                                <td><p><b>木质</b>：59<br/>
+                                    <b>石质</b>：131<br/>
+                                    <b>铁质</b>：250<br/>
+                                    <b>金质</b>：32<br/>
+                                    <b>钻石质</b>：1561<br/>
+                                    <b>下界合金质</b>：2031</p></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h3>弩</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E5%BC%A9" title="弩">弩</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td style="width: 32px;text-align: center">类型</td>
+                            <td>直接进攻</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>远程</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>射箭：<span class="nowrap">6（<span class="pixel-image nowrap" title="6 点生命值"><img alt="♥"
+
+                                                                                                               src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+
+                                                                                        src="../assets/images/icon/heart.webp"></span>）</span>-<span
+                                    class="nowrap">11（<span class="pixel-image nowrap" title="2 点生命值"><img alt="♥"
+
+                                                                                                           src="../assets/images/icon/heart.webp"></span> × 5.5）</span>
+                                <wbr>
+                                <sup class="nowrap" style="font-family:sans-serif;">[仅<a
+                                        href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88"
+                                        title="Java版">Java版</a>]</sup><span
+                                        class="nowrap">9（<span class="pixel-image nowrap" title="9 点生命值"><img alt="♥"
+
+                                                                                                              src="../assets/images/icon/heart.webp"></span> × 4.5 ）</span>-<span
+                                        class="nowrap"><br>10（<span class="pixel-image nowrap" title="10 点生命值"><img
+                                        alt="♥"
+
+                                        src="../assets/images/icon/heart.webp"></span> × 5）</span>
+                                <wbr>
+                                <sup class="nowrap" style="font-family:sans-serif;text-align: justify">[仅<a
+                                        href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88"
+                                        title="基岩版">基岩版</a>]</sup>，发射烟花火箭：<span class="nowrap">5（<span
+                                        class="pixel-image nowrap" title="5 点生命值"><img alt="♥"
+                                                                                       src="../assets/images/icon/heart.webp"></span> × 2.5）</span>-<br><span
+                                        class="nowrap">17（<span class="pixel-image nowrap" title="2 点生命值"><img alt="♥"
+
+                                                                                                               src="../assets/images/icon/heart.webp"></span> × 8.5）</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        只要用的好，斧能够对对方造成毁灭性的打击。玩家应该要注意，金斧的伤害和木斧一样（但是攻击速度较快）。木斧拥有与钻石剑一样的攻击力，石斧则有比钻石剑还高的攻击力（锋利III的钻石剑或拉满的弓的攻击力）。如果用斧造成暴击，所造成的伤害是剑远远不能比的。但是斧有个问题，那就是它的攻击速度很慢（斧攻击一次剑大约可以攻击两次），所以它不如剑好用。不过如果一个玩家拿了盾牌，你的剑所造成的伤害都会被盾牌挡住。这次可以用斧破盾，然后用剑狠狠地砍他。还有就是你和敌人将要相接的时候，你可以先把斧拿出来，这样你到他跟前的时候斧已经冷却完成了。这时可以用斧给他来一次暴击，这样他会受到很大的伤害，然后切换到剑再攻击他，这样很容易杀死对方（只要他没有高级护甲）。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="4">
+                        <img src="../assets/images/icon/crossbow/Crossbow_JE1_BE1.webp" alt="image 1">
+                        <img src="../assets/images/icon/crossbow/Crossbow_Pull_0.webp" alt="image 2">
+                        <img src="../assets/images/icon/crossbow/Crossbow_Pull_1.webp" alt="image 3">
+                        <img src="../assets/images/icon/crossbow/Crossbow_Pull_2.webp" alt="image 4">
+                        <img src="../assets/images/icon/crossbow/Arrow_Loaded_Crossbow.webp" alt="image 5">
+                        <img src="../assets/images/icon/crossbow/Firework_Loaded_Crossbow.webp" alt="image 6">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="弩"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                              title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                                <th><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81%E8%80%90%E4%B9%85"
+                                       title="物品耐久">
+                                    耐久度</a></th>
+                                <td><p><b>木质</b>：59<br/>
+                                    <b>石质</b>：131<br/>
+                                    <b>铁质</b>：250<br/>
+                                    <b>金质</b>：32<br/>
+                                    <b>钻石质</b>：1561<br/>
+                                    <b>下界合金质</b>：2031</p></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content  indent">
+                <div class="part_body_content">
+                    <h3>三叉戟</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E4%B8%89%E5%8F%89%E6%88%9F" title="三叉戟">三叉戟</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>直接进攻</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>近身搏斗或远程</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>近战：<span class="nowrap">9（<span class="pixel-image nowrap" title="9 点生命值"><img alt="♥"
+                                                                                                               src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/Half_Heart_29.webp"></span>）</span>，投掷：<span
+                                    class="nowrap">8（<span class="pixel-image nowrap" title="8 点生命值"><img alt="♥"
+                                                                                                          src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"></span>）</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>三叉戟同时拥有近战和远程攻击，与箭不同的是掷出的三叉戟不会受水流阻挡。因此三叉戟是水下的绝佳武器。近战时能够造成<span class="nowrap">9（<span
+                            class="pixel-image nowrap" title="9 点生命值"><img alt="♥"
+                                                                           src="../assets/images/icon/heart.webp"><img
+                            alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                src="../assets/images/icon/heart.webp"><img
+                            alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                src="../assets/images/icon/Half_Heart_29.webp"></span>）</span>伤害，比剑的伤害高。投掷时能够造成<span
+                            class="nowrap">8（<span class="pixel-image nowrap" title="8 点生命值"><img alt="♥"
+                                                                                                  src="../assets/images/icon/heart.webp"><img
+                            alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                src="../assets/images/icon/heart.webp"><img
+                            alt="♥" src="../assets/images/icon/heart.webp"></span>）</span>伤害，比弓或弩的伤害低，射程也近一点。三叉戟拥有四种独有附魔，包括：忠诚，使三叉戟被掷出后撞到生物或方块时飞回玩家手上，使得玩家不用再跑去捡起掷出的三叉戟。但要注意一点：即使附有忠诚，三叉戟也依然会在虚空中消失
+                        <wbr>
+                        <sup class="nowrap" style="font-family:sans-serif;">[仅<a
+                                href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88" title="Java版">Java版</a>]</sup>，所以尽量不要在末地中使用；激流，使三叉戟在水里或雨中时会带着玩家一起掷出，并在撞上生物后给予该生物主手的伤害，能够使玩家在水里极速运动。但也使得三叉戟在没有水或雨时无法掷出；穿刺，使三叉戟对水生生物的伤害增加。在<a
+                                href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88"
+                                title="基岩版">基岩版</a>中，还能增加对处于水中或雨中的其他生物的伤害；引雷，在雷雨天气时，使三叉戟掷中生物时生成一道雷电。可以借此制造闪电苦力怕（苦力怕）、僵尸猪灵（猪）、女巫（村民）、棕色哞菇（哞菇）。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="5">
+                        <img src="../assets/images/icon/trident/Trident.webp" alt="image 1">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="三叉戟"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                                title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                                <th><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81%E8%80%90%E4%B9%85"
+                                       title="物品耐久">
+                                    耐久度</a></th>
+                                <td><p>250</p></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content  indent">
+                <div class="part_body_content">
+                    <h3>桶</h3>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E6%A1%B6" title="桶">桶</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>依内容而定</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>依内容而定</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>依内容而定</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>桶可以用来装<a href="https://minecraft.fandom.com/zh/wiki/%E6%B0%B4" title="水">水</a>、<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E7%86%94%E5%B2%A9"
+                            title="熔岩">熔岩</a>来成为Minecraft中最强的武器。同时它也没有<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E8%80%90%E4%B9%85%E5%BA%A6" class="mw-redirect"
+                            title="耐久度">耐久度</a>，所以可以用无限次。桶主要用于防止怪物接近玩家，也可以用来装牛奶，用牛奶去除所有的<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E7%8A%B6%E6%80%81%E6%95%88%E6%9E%9C"
+                            title="状态效果">状态效果</a>。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="6">
+                        <img src="../assets/images/icon/bucket/Bucket_JE2_BE2.webp" alt="image 1">
+                        <img src="../assets/images/icon/bucket/Lava_Bucket_JE2_BE2.webp" alt="image 2">
+                        <img src="../assets/images/icon/bucket/Water_Bucket_JE2_BE2.webp" alt="image 3">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="桶"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                              title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h4>水桶</h4>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E6%B0%B4%E6%A1%B6" title="水桶">水桶</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>防御、阻碍敌人</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>半径8格范围内</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>无（除非是<a href="https://minecraft.fandom.com/zh/wiki/%E6%9C%AB%E5%BD%B1%E4%BA%BA"
+                                        title="末影人">末影人</a>或<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E7%83%88%E7%84%B0%E4%BA%BA" title="烈焰人">烈焰人</a>）
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        水桶可以用来减缓怪物向你走来的速度，并使它们更易受到攻击伤害。利用好这一点，那么对付成群的怪物就简单了。水桶在面对熔岩桶的攻势时也会产生巨大的优势，并且它也是一个很好的灭火工具。放水快速也是它的优点。不过，水桶在<a
+                            href="https://minecraft.fandom.com/zh/wiki/%E4%B8%8B%E7%95%8C" title="下界">下界</a>中是无法使用的。当然，利用水来做一个陷阱也有可能淹死对手，不过用水来做陷阱的话，最好使用黑曜石。在水下破坏方块可是非常困难的。
+                    </p>
+                    <p>当你面对末影人的攻击时，站在水中也可以很好的保护你自己。
+                    </p>
+                </div>
+                <div class="show">
+                    <div class="box" id="7">
+                        <img src="../assets/images/icon/bucket/Water_Bucket_JE2_BE2.webp" alt="image 2">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="水桶"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                               title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content indent">
+                <div class="part_body_content">
+                    <h4>熔岩桶</h4>
+                    <div class="hat-note">主条目：
+                        <a href="https://minecraft.fandom.com/zh/wiki/%E7%86%94%E5%B2%A9%E6%A1%B6" title="熔岩桶">熔岩桶</a>
+                    </div>
+                    <table class="wiki_table">
+                        <tbody>
+                        <tr>
+                            <td>类型</td>
+                            <td>接触、持续性火焰伤害</td>
+                        </tr>
+                        <tr>
+                            <td>范围</td>
+                            <td>半径3格范围内</td>
+                        </tr>
+                        <tr>
+                            <td>伤害</td>
+                            <td>每半秒火焰伤害<span class="nowrap">4（<span class="pixel-image nowrap" title="4 点生命值"><img
+                                    alt="♥" src="../assets/images/icon/heart.webp"><img alt="♥"
+                                                                                        src="../assets/images/icon/heart.webp"></span>）</span>（下界生物除外，不包括猪灵、猪灵蛮兵和疣猪兽）
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        熔岩桶可以给怪物大量的伤害，它将提供光亮并大幅度减慢怪物向你走来的速度，而且比水还有效。玩家可以在地面上倒熔岩，然而，这将会造成难以收回熔岩，甚至还会烧到你自己。玩家可以挖一个7×1的沟渠并倒桶熔岩，让怪物受到足够的伤害，以便容易杀死他们。但是，这种方法对蜘蛛是无效的。要杀死蜘蛛必须挖7×2的沟渠。可是因为怪物AI的更新，上述方法就不再有效，因为大多数的怪物会避开熔岩。熔岩桶几乎对所有的下界怪物没用，他们唯一的用处就是像水一样用来降低怪物的移动速度（例如：僵尸猪灵和岩浆怪）。同时，熔岩会摧毁一切怪物死后的掉落物，所以熔岩一般用来完全杀死怪物。</p>
+                    <p>
+                        不过，一把附魔了“火矢”的弓和附魔了“火焰附加”的剑也可以使敌人遭受火焰伤害。但当你的弓没有“火矢”附魔时，熔岩桶可以放置在方块上，并使经过它的箭着火。最好的方法就是用一些廉价（如羊毛、木头等，不必担心它们会着火）的方块，将熔岩放置在两格高的方块的顶上。将熔岩扩散的区域围住，避免自己受伤。然后你可以在熔岩后面向敌人射箭，注意要让箭能通过熔岩。这种方法虽然较慢，但是这也的确是一种用于远距离作战的好方法，而且不必在意这把弓是否附出来了“火矢”附魔。使用这种方法也可以像“火矢”弓一样，点燃敌人方位的TNT。</p>
+                </div>
+                <div class="show">
+                    <div class="box" id="8">
+                        <img src="../assets/images/icon/bucket/Lava_Bucket_JE2_BE2.webp" alt="image 2">
+                    </div>
+
+                    <div class="show_table">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <th id="熔岩桶"><a href="https://minecraft.fandom.com/zh/wiki/%E7%A8%80%E6%9C%89%E5%BA%A6"
+                                                title="稀有度">
+                                    稀有度颜色</a></th>
+                                <td><p>常见</p></td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <th>
+                                    <a href="https://minecraft.fandom.com/zh/wiki/%E5%8F%AF%E5%86%8D%E7%94%9F%E8%B5%84%E6%BA%90"
+                                       title="可再生资源">
+                                        可再生</a></th>
+                                <td><p>是</p></td>
+                            </tr>
+                            <tr>
+                                <th>可堆叠</th>
+                                <td><p>否</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <span class="contents_title" id="战斗方式" style="margin-top: 20px">战斗方式</span>
+            <hr style="margin-top: 20px">
+            <div class="part_content ">
+                <div class="part_body_content pbc_width">
+                    <h3>近身战</h3>
+                    <div style="padding: 0 40px">
+                        <p>需要：</p>
+                        <ul>
+                            <li>有锋利附魔的钻石剑（或下界合金剑）</li>
+                            <li>有保护附魔的钻石盔甲（或下界合金盔甲）</li>
+                            <li>一些瞬间治疗II、再生喷溅药水</li>
+                            <li>较好的食物（如：牛排或熟猪排等）</li>
+                        </ul>
+                        <p id="近身战">别带这些东西：</p>
+                        <ul>
+                            <li>西瓜</li>
+                            <li>腐肉</li>
+                            <li>生的肉类</li>
+                            <li>曲奇</li>
+                            <li>苹果</li>
+                            <li>胡萝卜</li>
+                        </ul>
+                        <p>这些<a href="https://minecraft.fandom.com/zh/wiki/%E9%A3%9F%E7%89%A9" title="食物">食物</a>只有非常低的饥饿值与饱和度并会使你的饥饿值变低的非常快，尤其是战斗时，因为你会跑、跳、攻击和受伤，这些行为会使你的饥饿值快速降低。所以如果你打算长期战斗，下列的食物是较好的选择：
+                        </p>
+                        <ul>
+                            <li>金苹果</li>
+                            <li>牛排</li>
+                            <li>猪排</li>
+                            <li>金胡萝卜（尤其推荐，提供的饱和度多）</li>
+                            <li>附魔金苹果（可以让你几乎无敌，反败为胜）</li>
+                        </ul>
+                        <p>除了蛋糕以外，这些食物都有很高的饱食度及饱和度回复，蛋糕有14，所以也不错，蛋糕可以放在地上食用而不会受到吃东西减速效果。不过如果服务器不可放置方块，蛋糕就没用了。</p>
+                        <p>一定要保证你的剑是在你的物品栏里最容易被拿到的物品，这取决于你是如何设置的。如果你使用默认的控制设置，你应该把剑放在物品栏的<b>最左边</b>。同理，确保其他的重要物品也靠左放置了，如食物或药水。
+                        </p>
+                        <p><b>进入战斗：</b></p>
+                        <p>
+                            遇到你的对手时，拿着你的剑，全速冲向它，当你接近它时，开始挥剑。尝试在空中攻击（也就是跳劈），这样伤害值更高。如果你重击到了TA，会有一个星状的粒子效果；如果你疾跑时打到了TA，你的对手会被击退。如果你是被攻击的那一个，并且你受到的伤害值太高以至于你无法重新进入战斗，最好的选择就是使用喷溅药水。不要立刻使用药水，因为你可能会不小心帮助了你的对手。你应该跑出你的对手的攻击范围，接着在跑的时候暂时往下看，然后投掷药水。如果它是喷溅型治疗药水，后转快速攻击你的对手（这可能会暂时镇住他）。如果它是再生药水，等待你的血量完全恢复，接着继续砸再生药水，能砸多少砸多少。再生效果会是一个极大的优势，它允许你攻击而不用害怕受到太多伤害。
+                            如果你离你的对手有一段距离，且你的对手使用弓攻击，马上向它们靠近，在靠近的过程中尝试不停地跳跃和左右移动（让你的对手难以瞄准你）。如果可以，挥剑来抵挡射来的箭。这样做你只会受到来自箭的一半的伤害。
+                        </p>
+                        <p><b>小技巧：</b></p>
+                        <ul>
+                            <li>如果你在短时间内不停攻击，那么请注意，当你的对手变红时不要攻击。因为此时他进入了受伤害后的无敌状态，即便你攻击了，你他仍不会受到伤害。这时你应该使用拥有<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E9%98%B2%E5%BE%A1" title="防御">防御</a>能力的物品抵挡攻击，直到你的对手再次变回去。
+                            </li>
+                            <li>吃东西：不要吃蛋糕，如果你吃蛋糕，你的速度会减慢至潜行时的速度。当你被箭攻击时，注意一下你的对手。当对手射出箭时，从你当前的位置移开，马上吃东西，接着赶快跑开。</li>
+                            <li>
+                                要有自知之明，知道自己会不会失败，不要逞能。如果你穿着保护I的铁盔甲，使用锋利III的铁剑，而你的对手穿着保护IV的下界合金盔甲，使用锋利V的下界合金剑，那么你是几乎不可能赢的。
+                            </li>
+                            <li>
+                                当你被打到只剩几滴血的时候，如果选择逃跑，那你可以在逃跑的过程中按下F5键来切换第三人称视角这样你就可以看到敌人还有没有在追你，已或者断是你离敌人否有足够的距离来治疗、吃东西回复血量。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>隐身刺客</h3>
+                    <div style="padding: 0 40px">
+                        <p>需要：</p>
+                        <ul>
+                            <li>隐身药水（时间越长越好）</li>
+                            <li>迅捷药水（时间越长越好）</li>
+                            <li>夜视药水（首选）</li>
+                            <li>不错的食物（如：牛排、烤猪排等）</li>
+                            <li>剑</li>
+                            <li>弓或弩</li>
+                            <li>足够数量的箭</li>
+                        </ul>
+                        <p id="隐身刺客">步骤：</p>
+                        <ul>
+                            <li>吃食物直到饱和度满为止。</li>
+                            <li>使用（投掷或喝下）你的3瓶药水。</li>
+                            <li>使用潜行让你的敌人不知道你的位置。</li>
+                            <li>当他转身时，向他冲刺并挥舞你的剑，并挡下他的攻击。</li>
+                            <li>对他持续攻击，直到你的血量不足。</li>
+                            <li>如果你有剩余的药水，就使用它们吧（推荐使用投掷药水）。</li>
+                            <li>冲刺离开战场，然后潜行。</li>
+                            <li>边移动边射击，直到他死亡。如果他并没被击杀，而你的血量已经恢复足够，继续进行第五步，如此循环。</li>
+                        </ul>
+                        <p>优点：</p>
+                        <ul>
+                            <li>快速的奇袭，这在战场上是个非常强大的策略。</li>
+                        </ul>
+                        <p>缺点：</p>
+                        <ul>
+                            <li>这种方法对生物群不适用。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>连弩</h3>
+                    <div style="padding: 0 40px">
+                        <p>需要：</p>
+                        <ul>
+                            <li>9把弩（推荐附魔多重射击、穿透）</li>
+                            <li>足够多的箭或药箭、烟花火箭</li>
+                            <li id="连弩">剑（推荐附魔击退）</li>
+                            <li>高营养食物（如：牛排）</li>
+                            <li>迅捷药水</li>
+                        </ul>
+                        <p><b>务必提前将9把弩装填好</b>。当遇到目标时，离目标近些以提高命中率。若目标有多个则使用多重射击、穿透弩或装填烟花火箭。距离合适时，在短时间内将9把弩的弹药全部发射出去以造成大量伤害。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>弓箭战</h3>
+                    <div style="padding: 0 40px">
+                        <p>方法：</p>
+                        <ul>
+                            <li id="弓箭战">使用这个战术，玩家更加经常使用弓箭，有时甚至在近战时采用（<b>一支蓄满力的箭甚至比一把没有附魔的钻石剑还要强</b>）。但是还是要记住，一把剑能攻击得更快，也就是说每秒造成的伤害值更多。
+                            </li>
+                            <li>你最好还是带几把剑，特别是当你的敌人拥有铁剑及以上的剑时，你更要带剑。因为在近战时，他们每秒造成的伤害值显著地更多。</li>
+                            <li>冲击（弓）和击退（剑）附魔是极其有用的，因为击退敌人能给你逃跑的时间。这在PvP里也很有用，你如果被敌人的附有“击退”的剑击中了，你可以趁机逃跑，这样你只受到了一次伤害。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="contents_title" id="附魔" style="margin-top: 20px">附魔</span>
+            <hr style="margin-top: 20px">
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>剑的附魔</h3>
+                    <div style="padding: 0 40px">
+                        <p>效果：</p>
+                        <ul>
+                            <li>在满目疮痍的地形区域内（如天坑或仙人掌遍布的地形）战斗时，击退附魔效果不错。但是在对付可以进行远程攻击的敌人（如烈焰人和骷髅等）时要尽量避免使用。</li>
+                            <li id="剑的附魔">火焰附加被大多数玩家认为是是游戏里最有价值的附魔之一，然而如果你在下界待久了，就会发觉火焰附加在下界其实并没有什么大用处——大多数的下界生物都是耐火的。
+                            </li>
+                            <li>节肢杀手附魔剑在探索废弃矿井时会大行其道。剑本身就可以不费吹灰之力采集掉一张<a
+                                    href="https://minecraft.fandom.com/zh/wiki/%E8%9C%98%E8%9B%9B%E7%BD%91" title="蜘蛛网">蜘蛛网</a>，而附有节肢杀手Ⅴ的钻石剑更是可以一剑劈死一只蜘蛛。
+                            </li>
+                            <li>锋利附魔是作战多面手——它没有任何弊端，对付任何生物时都没有任何劣势，但相对应的，对付任何生物时都没有任何特殊优势。</li>
+                            <li>亡灵杀手附魔对于没有庇护所的玩家来说用处很大，在任何一个不眠之夜里，僵尸骷髅都会成群结队地找你的麻烦。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content">
+                <div class="part_body_content  pbc_width">
+                    <h3>弓的附魔</h3>
+                    <div style="padding: 0 40px">
+                        <p>效果：</p>
+
+                        <ul>
+                            <li>战斗弓手会把冲击附魔弓运用地比狙击弓手更加有效。这个“升级版”击退能让玩家在战斗时多用弓箭打出几次超高伤害。</li>
+                            <li>狙击弓手会把力量附魔弓运用地比战斗弓手更加有效，因为它在直接对抗中无法完全施展其威力。</li>
+                            <li id="弓的附魔">
+                                火矢弓就像火焰附加剑一样，在对抗下界生物时用处不大。它依然是狙击弓手的利器——他们（在引燃一个目标后）能够立刻把箭头指向另外一个目标，而战斗弓手却很难做到这一点。
+                            </li>
+                            <li>
+                                无限附魔为所有类型的弓手所喜闻乐见——狙击弓手经常会有自己的狙击点，并且他们会从一点（即狙击点）中射箭，并很可能在一个目标上耗尽自己的箭。你甚至无需回到基地去取箭，就可以在步步紧逼中让敌人惶惶不可终日。由于战斗弓手要兼顾自己的伤害输出和自身生命值，他们可以凭着无限附魔弓射个爽。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>盔甲的附魔</h3>
+                    <div style="padding: 0 40px">
+                        <p>效果：</p>
+                        <ul>
+                            <li>
+                                火焰保护在下界就显得非常有效，因为在下界你要小心被火焰之类的东西烧到：烈焰人的火球、恶魂的火球、遍地的火焰和从下界天花板上泼下来的熔岩。它也可以被看作为“反火附”附魔：如果你的敌人依靠火来打出伤害，火焰保护会给你带来巨大的优势（不过抗火药水更好）。
+                            </li>
+                            <li>
+                                保护附魔，顾名思义，对于各种伤害都会起到一定的保护作用。推荐在钻石盔甲或下界合金盔甲上使用该附魔。穿上高等级的保护附魔的钻石盔甲，你就可以在战场上横行霸道无所顾忌。但是它在格挡掉更多伤害的同时会迅速损耗掉你盔甲的耐久，而钻石盔甲以及下界合金盔甲极高的耐久度让它成为保护附魔的不二选择。
+                            </li>
+                            <li id="盔甲的附魔">如果你的弓已经要损坏了，不妨试试弹射物保护附魔。拿着一把坏掉的弓意味着你要进行近身搏斗。而敌人会利用这一优势，从远处展开攻势。</li>
+                            <li>因为苦力怕和恶魂只能通过爆炸造成伤害，爆炸保护在对付它们时十分奏效。在战斗之外，用TNT开采矿石时，它也会起到保护作用。</li>
+                            <li>当你身居高处时，摔落保护就能派上用场了。它可以成功抵御在战斗中来自击退跌伤的伤害——如果你周围的战斗环境只能在摔落伤害上做文章的话。</li>
+                            <li>水下呼吸看似和战斗没什么关联，但是如果你万一要在水下展开对抗呢？除此之外，当有人往你的头上扔沙子时，你也有更高的概率不被从天而降的沙子闷死。</li>
+                            <li>冰霜行者与深海探索者是两个互相冲突的魔咒。深海探索者可以让你在水中速度更快，而冰霜行者可以把对手困在水下使他们溺水死亡。不过这对于一些不会溺水的生物无效。</li>
+                            <li><a href="https://minecraft.fandom.com/zh/wiki/%E8%8D%86%E6%A3%98" title="荆棘">荆棘</a>附魔可在对手攻击你时额外消耗1-4点耐久度对对手予以还击，但会使盔甲的耐久度快速下降。因此，使用钻石、下界合金质等高耐久盔甲以及搭配耐久附魔可以在与对手拉锯战时更有优势。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>三叉戟的附魔</h3>
+                    <div style="padding: 0 40px">
+                        <p>效果：</p>
+                        <ul>
+                            <li>穿刺附魔可以对水生生物
+                                <wbr>
+                                <sup class="nowrap" style="font-family:sans-serif;">[仅<a
+                                        href="https://minecraft.fandom.com/zh/wiki/Java%E7%89%88"
+                                        title="Java版">Java版</a>]</sup>或在水中或雨中的生物
+                                <wbr>
+                                <sup class="nowrap" style="font-family:sans-serif;">[仅<a
+                                        href="https://minecraft.fandom.com/zh/wiki/%E5%9F%BA%E5%B2%A9%E7%89%88"
+                                        title="基岩版">基岩版</a>]</sup>造成大量伤害，但对其他生物没有任何作用。
+                            </li>
+                            <li>激流可以让你在水下或者下雨天快速移动，起到出其不意的效果，但不要直直的向天上飞，因为这种方式的效果足以摔死你。</li>
+                            <li id="三叉戟的附魔">忠诚附魔可以让你的三叉戟变得可回收，但记住，不要投掷的很远，因为你需要很长时间才能收回这把三叉戟。</li>
+                            <li>引雷附魔在雷雨天会非常好用，但记住不要近身投掷，因为闪电不长眼睛的。还有，引雷附魔会摧毁掉生物的掉落物。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div class="part_content">
+                <div class="part_body_content pbc_width">
+                    <h3>弩的附魔</h3>
+                    <div style="padding: 0 40px">
+                        <p>效果：</p>
+                        <ul>
+                            <li>快速装填可以让你的弩装填速度变快。</li>
+                            <li>多重射击附魔可以让你的弩同时射出三支箭。</li>
+                            <li id="弩的附魔">穿透附魔使箭能穿过并击中等级+1个实体。注意盔甲架和末地水晶无法被穿透，而且，任意等级的穿透附魔均可以无视盾牌。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px">
+            <div style="height: 300px"></div>
+        </div>
+        <div class="scrollTo">
+            <a href=javascript:void(0) id="scrollTo">
+                <img src="../assets/images/icon/scrollTo.png" alt="">
+
+            </a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
