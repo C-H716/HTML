@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$().ready(function(){
+			$("#myB").on("click",function(){
+				//alert("hahaha");
+				this.style.backgroundColor="red";
+				//this.css("background-color","red");
+			});
+			
+			$("div").on("click",function(){
+				$(this).after("hahahaha");
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<button id="myB">Click</button>
+	<div>this is div</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/npm.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.css" rel="stylesheet">
+    <style>
+        .header-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right{
+            display: inherit;
+        }
+
+        ul.nav{
+            display: flex;
+            width: 100%;
+        }
+
+        ul.nav li:last-child{
+            margin-left: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="${pageContext.request.contextPath}/index.jsp">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            商品分类
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4>商品分类</h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">热销</a></li>
+                    <li><a href="#">新品</a></li>
+                    <li><a href="#" class="active">注册</a></li>
+                    <li><a href="#">登陆</a></li>
+                    <li>
+                        <div class="header-info">
+                            <div class="header-right search-box">
+                                <a href="javascript:(0);" style="margin: auto">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </a>
+
+                                <div class="search">
+                                    <form class="navbar-form" action="">
+                                        <input type="text" class="form-control" name="keyword">
+                                        <button type="submit" class="btn btn-default" aria-label="LeftAlign">搜索</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="header-right cart">
+                                <a href="goods_cart.jsp">
+                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                                    <span class="card_num"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+</body>
+</html>

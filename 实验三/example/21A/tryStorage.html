@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		function setSession(){
+			sessionStorage.setItem("name","ivan");
+		}
+		function getSession(){
+			console.log(sessionStorage.getItem("name"));
+		}
+		
+		function setLocal(){
+			localStorage.setItem("sex","male");
+		}
+		function getLocal(){
+			console.log(localStorage.getItem("sex"));
+		}
+	</script>
+</head>
+
+<body>
+	<a href="tryTopOBJ.html">trytrytry</a>
+	<button onClick="setSession()">setSession()</button>
+	<button onClick="getSession()">getSession()</button>
+	<button onClick="setLocal()">setLocal()</button>
+	<button onClick="getLocal()">getLocal()</button>
+</body>
+</html>

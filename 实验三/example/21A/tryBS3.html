@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"></script>
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Form</h1>
+		<form class="form-group">
+			<label for="mT">Name:</label>
+			<input type="text" id="mT">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Name:</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Please input your Name">
+			</div>
+			<div class="input-group">				
+				<input type="password" class="form-control" placeholder="Please input your Password">
+				<div class="input-group-append">
+					<span class="input-group-text">Password:</span>
+				</div>
+			</div>
+			<h1>Textarea</h1>
+			<label for="cv" class="btn btn-warning btn-block">CV:
+				<textarea id="cv" class="form-control"></textarea>
+			</label>
+			<h1>Radio</h1>
+			<input type="radio">A<br>
+			<div class="custom-control custom-radio custom-control-inline">
+				<input class="custom-control-input" type="radio" name="sex" id="sexM">
+				<label for="sexM" class="custom-control-label">Male</label>
+			</div>
+			<div class="custom-control custom-radio custom-control-inline">
+				<input class="custom-control-input" type="radio" name="sex" id="sexF">
+				<label for="sexF" class="custom-control-label">Female</label>
+			</div>
+			<h1>CheckBox</h1>
+			<input type="checkbox">A
+			<br>
+			<div class="form-check form-check-inline btn-group">
+				<label class="form-check-label btn btn-danger" >
+					<input type="checkbox" class="form-check-input">A
+				</label>
+				<label class="form-check-label btn btn-danger" >
+					<input type="checkbox" class="form-check-input">B
+				</label>
+				<label class="form-check-label btn btn-danger" >
+					<input type="checkbox" class="form-check-input">C
+				</label>
+			</div>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><input type="checkbox"></span>					
+				</div>
+				<input type="text" class="form-control" placeholder="Others">
+			</div>
+			<div class="custom-control custom-checkbox custom-control-inline">
+				<input type="checkbox" class="custom-control-input" id="cc1">
+				<label for="cc1" class="custom-control-label">AA</label>
+			</div>
+			<div class="custom-control custom-checkbox custom-control-inline">
+				<input type="checkbox" class="custom-control-input" id="cc2">
+				<label for="cc2" class="custom-control-label">AA2</label>
+			</div>
+			<h1>Select</h1>
+			<select class="form-control">
+				<option>A</option>
+				<option>A</option>
+				<option>A</option>
+			</select>
+			<select class="custom-select">
+				<option>A</option>
+				<option>A</option>
+				<option>A</option>
+			</select>
+			<h1>Range</h1>
+			<input type="range" class="form-control">
+			<input type="range" class="custom-range">
+			<h1>File Upload</h1>
+			<input type="file" class="form-control">
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" id="myF">
+				<label for="myF" class="custom-file-label">Select File</label>
+			</div>
+		</form>
+		<h1>Modal</h1>
+		<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal" data-backdrop="static">Click Me</button>
+	</div>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">Logo</div>
+				<div class="modal-body">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link">aaa</a></li>
+						<li class="nav-item"><a class="nav-link">aaa</a></li>
+						<li class="nav-item"><a class="nav-link">aaa</a></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-warning" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"></script>
+<title>无标题文档</title>
+	<script>
+		$().ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+	<style>
+		#myMenu{
+			position:fixed;
+			right: 0;
+			top:50%;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target="#myMenu" data-offset="100">
+	<ul class="nav flex-column nav-pills" id="myMenu">
+		<li class="nav-item"><a class="nav-link" href="#s1">Section1</a></li>
+		<li class="nav-item"><a class="nav-link" href="#s2">Section2</a></li>
+		<li class="nav-item"><a class="nav-link" href="#s3">Section3</a></li>
+	</ul>
+	<div class="container">
+		<h1>Media</h1>
+		<div class="media">
+			<img src="Penguins.jpg" class="mr-3 w-25">
+			<div class="media-body">
+				<h4>Ivan</h4>
+				<span>this is Ivan</span>
+			</div>
+		</div>
+		<div id="s1"><h1>S1</h1></div>
+		<h1 data-toggle="tooltip" data-html="true" title="<a href='#'>hahahahah</a>">This is tooltip</h1>
+		<h1 data-toggle="popover" data-html="true" title="Title" data-content="<a class='btn btn-info'>click me</a>" data-placement="bottom" data-trigger="hover" data-offset="100">This is popover</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<div id="s2"><h1>S2</h1></div>
+		<h1 data-toggle="tooltip" data-html="true" title="<a href='#'>hahahahah</a>">This is tooltip</h1>
+		<h1 data-toggle="popover" data-html="true" title="Title" data-content="<a class='btn btn-info'>click me</a>" data-placement="bottom" data-trigger="hover" data-offset="100">This is popover</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<div id="s3"><h1>S3</h1></div>
+		<h1 data-toggle="tooltip" data-html="true" title="<a href='#'>hahahahah</a>">This is tooltip</h1>
+		<h1 data-toggle="popover" data-html="true" title="Title" data-content="<a class='btn btn-info'>click me</a>" data-placement="bottom" data-trigger="hover" data-offset="100">This is popover</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+		<h1>1111111</h1>
+	</div>
+</body>
+</html>

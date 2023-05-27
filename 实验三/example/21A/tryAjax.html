@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$().ready(function(){
+			$("#myB1").on("click",function(){
+				$(this).load("abc.txt",function(v,s,x){
+					console.log(v);
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div></div>
+	<button id="myB" onClick="tryAjax()">Ajax</button>
+	<button id="myB1">JQ Ajax</button>
+</body>
+	<script>
+		function tryAjax(){
+			var ajax=new XMLHttpRequest();
+			ajax.onreadystatechange=function(){
+				if(ajax.readyState==4 && ajax.status==200){
+					let data=ajax.responseText;
+					//document.querySelector("div").innerHTML=data;
+					var j=JSON.parse(data);
+					document.querySelector("div").innerHTML=j.name;
+				}
+			};
+			ajax.open("GET","abc.txt",true);
+			ajax.send();
+		}
+	</script>
+</html>

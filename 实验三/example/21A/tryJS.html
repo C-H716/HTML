@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		var a=null;
+		console.log(a);
+		i=4;
+		tryJS();
+		function tryJS(){
+			var j=3;
+			console.log(j);
+		}
+		console.log(j);
+		var j=123;
+		
+		var myArr=[1,2,3];
+		myArr[30]=5;
+		myArr[20]="abc";
+		myArr[15]=true;
+		myArr.aaa="aaaaa";
+		myArr.bbb="bbbb";
+		myArr["ccc"]="cccc";
+		//for(i of myArr)
+		//	console.log(i);
+		var mySet=new Set();
+		mySet.add("abc");
+		mySet.add("abc");
+		mySet.add("abc");
+		mySet.add(123);
+		mySet.add(123);
+		mySet.add(123);
+		mySet.add(true);
+		mySet.add(true);
+		mySet.add(true);
+		mySet.add(true);
+		
+		mySet.forEach(function(v){
+			console.log(v);
+		});
+	
+	</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		console.log(navigator.platform+navigator.userAgent+navigator.vendor);
+		
+		console.log(screen.availHeight);
+		console.log(screen.height);
+		console.log(screen.availWidth);
+		console.log(screen.width);
+		
+		function tryHistroy(){
+			//history.back();
+			history.go(-1);
+		}
+		function tryConfirm(){
+			if(confirm("are u sure?"))
+				alert("ok");
+			else
+				alert("no");
+		}
+		function tryPrompt(){
+			console.log(prompt("what is your name?"));
+		}
+		function tryTimeout(){
+			/*setTimeout(function(){
+				alert("Time Out");
+			},2000);*/
+			setInterval(function(){
+				console.log("hahahah ");
+			},2000);
+		}
+	</script>
+</head>
+
+<body>
+	<button onClick="tryHistroy()">tryHistroy()</button>
+	<button onClick="tryConfirm()">tryConfirm()</button>
+	<button onClick="tryPrompt()">tryPrompt()</button>
+	<button onClick="tryTimeout()">tryTimeout()</button>
+</body>
+</html>

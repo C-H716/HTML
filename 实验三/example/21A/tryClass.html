@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		class myClass{
+			constructor(n,a,s){
+				this.name=n;
+				this.age=a;
+				this.sex=s;
+			}
+			get getName(){
+				return this.name;
+			}
+			set setName(x){
+				this.name=x;
+			}
+			addAge(x){
+				return this.age+x;
+			}
+			static staticFun(){
+				return "this is static function!";
+			}
+		}
+		var my=new myClass("peggy",33,"female");
+		console.log(my.addAge(3));
+		my.setName="joyce";
+		console.log(my.getName);
+	</script>
+</head>
+
+<body>
+</body>
+</html>

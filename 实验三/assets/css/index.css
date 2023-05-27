@@ -1,0 +1,10 @@
+div.sidebar_header_bg{
+    background-image: url("../image/personalBg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 80% auto;
+}
+
+.fa {
+    width: 1rem;
+}

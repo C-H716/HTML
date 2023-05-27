@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>无标题文档</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../../assets/js/popper.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"></script>
+  <style>
+
+      .carousel-inner img {
+          width: 100%;
+          height: 100%;
+      }
+
+      #mySpyMenu {
+          position: fixed;
+          right: 0;
+          z-index: 9999;
+      }
+  </style>
+  <script>
+      $().ready(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+      });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target="#mySpyMenu">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand"><i class="fa fa-bus fa-fw"></i>管理平台</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="myMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link">首页</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown">管理班级</a>
+          <div class="dropdown-menu bg-secondary">
+            <a class="dropdown-item" href="#">AAAAA</a>
+            <a class="dropdown-item" href="#">AAAAA</a>
+            <a class="dropdown-item" href="#">AAAAA</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">教师管理</a>
+        </li>
+      </ul>
+      <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#myLogin" data-backdrop="static">登录</button>
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="myLogin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>登录</h1>
+      </div>
+      <div class="modal-body">
+        <form class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">用户名</span>
+            </div>
+            <input type="text" class="form-control" placeholder="输入用户名">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">密码</span>
+            </div>
+            <input type="password" class="form-control" placeholder="输入密码">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">提交</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="carousel slide" data-ride="carousel" id="myCarousel" data-interval="500" data-pause="false"
+    data-wrap="false">
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner/1.png">
+      <div class="carousel-caption">
+        <h4>Ivan's Web!!!</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="banner/2.png">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/3.png">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+</div>
+<ul class="nav nav-pills bg-danger flex-column" id="mySpyMenu">
+  <li class="nav-item"><a href="#s1" class="nav-link">Section1</a></li>
+  <li class="nav-item"><a href="#s2" class="nav-link">Section2</a></li>
+  <li class="nav-item"><a href="#s3" class="nav-link">Section3</a></li>
+</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebar col-sm-2 d-none d-sm-block bg-dark">
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#">AAAAAA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">AAAAAA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">AAAAAA</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-10">
+      <div class="breadcrumb">
+        <a class="breadcrumb-item" href="#">首页</a>
+        <a class="breadcrumb-item" href="#">我的</a>
+        <a class="breadcrumb-item active" href="#">我的管理</a>
+
+      </div>
+      <p>
+        <button class="btn btn-danger btn-lg" data-toggle="tooltip" title="<h1>这是一个提示框</h1>" data-placement="bottom"
+            data-html="true">提示框
+        </button>
+        <button class="btn btn-danger btn-lg" data-toggle="popover" title="这是一个弹出框" data-content='<ul class="list-group">
+			<li class="list-group-item"><a href="#" class="list-group-item-action">1234</a></li>
+			<li class="list-group-item"><a href="#" class="list-group-item-action">1234</a></li>
+			<li class="list-group-item"><a href="#" class="list-group-item-action">1234</a></li>
+		</ul>' data-html="true" data-placement="right" data-trigger="focus" data-animation="false" data-delay="500"
+            data-offset="-300">popover
+        </button>
+        <button class="btn btn-danger btn-lg">123</button>
+        <button class="btn btn-danger btn-lg">123</button>
+        <button class="btn btn-danger btn-lg">123</button>
+        <button class="btn btn-danger btn-lg">123</button>
+      </p>
+      <h1>S1</h1>
+      <div class="row" id="s1">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header bg-primary text-white">最新提醒
+            </div>
+            <div class="card-body">
+              <div class="alert alert-info alert-dismissible">体是您的订单
+                <button class="close" data-dismiss="alert">X</button>
+              </div>
+              <div class="alert alert-info alert-dismissible">体是您的订单
+                <button class="close" data-dismiss="alert">X</button>
+              </div>
+              <div class="alert alert-info alert-dismissible">体是您的订单
+                <button class="close" data-dismiss="alert">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header bg-primary text-white">最新提醒
+            </div>
+            <div class="card-body">
+              <button class="btn btn-dark btn-block text-left">订单审批<span
+                  class="badge badge-info float-sm-right">50</span></button>
+              <button class="btn btn-dark btn-block text-left">订单审批<span class="badge badge-info float-right">50</span>
+              </button>
+              <button class="btn btn-dark btn-block text-left">订单审批<span class="badge badge-info float-right ">50</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <div class="media">
+              <img src="../cx.jpg" class="align-self-center">
+              <div class="media-body ml-2">
+                <h3>Ivan</h3>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+              </div>
+            </div>
+            <div class="media">
+              <img src="../cx.jpg" class="align-self-center">
+              <div class="media-body">
+                <h3>Ivan</h3>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+                <p>This is ivan's web</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <div class="alert alert-success text-center" style="width: 30%">水井进度</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h1>S2</h1>
+      <div class="row" id="s2">
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <table class="table table-striped table-hover table-responsive-sm">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>产品</th>
+                <th>数量</th>
+                <th>总金额</th>
+                <th>业务员</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Apple Macbook air</td>
+                <td>10</td>
+                <td>80000</td>
+                <td>王小贱</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Apple iPad air</td>
+                <td>20</td>
+                <td>65000</td>
+                <td>尹开花</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Apple Macbook pro</td>
+                <td>5</td>
+                <td>50000</td>
+                <td>刘老根</td>
+              </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <div class="alert alert-success text-center" style="width: 30%">水井进度</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <table class="table table-striped table-hover table-responsive-sm">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>产品</th>
+                <th>数量</th>
+                <th>总金额</th>
+                <th>业务员</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Apple Macbook air</td>
+                <td>10</td>
+                <td>80000</td>
+                <td>王小贱</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Apple iPad air</td>
+                <td>20</td>
+                <td>65000</td>
+                <td>尹开花</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Apple Macbook pro</td>
+                <td>5</td>
+                <td>50000</td>
+                <td>刘老根</td>
+              </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <div class="alert alert-success text-center" style="width: 30%">水井进度</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h1>S3</h1>
+      <div class="row" id="s3">
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <table class="table table-striped table-hover table-responsive-sm">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>产品</th>
+                <th>数量</th>
+                <th>总金额</th>
+                <th>业务员</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Apple Macbook air</td>
+                <td>10</td>
+                <td>80000</td>
+                <td>王小贱</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Apple iPad air</td>
+                <td>20</td>
+                <td>65000</td>
+                <td>尹开花</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Apple Macbook pro</td>
+                <td>5</td>
+                <td>50000</td>
+                <td>刘老根</td>
+              </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card-header bg-primary text-white">最新提醒</div>
+          <div class="card-body">
+            <div class="alert alert-success text-center" style="width: 30%">水井进度</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

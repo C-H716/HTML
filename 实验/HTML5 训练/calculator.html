@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>两位整数加法计算器</title>
+  <style>
+      .UI {
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -200px;
+          /*宽度的一半*/
+          margin-top: -250px;
+          /*高度的一半*/
+          border: 2px solid black;
+          box-sizing: border-box;
+          background-color: #ececec;
+      }
+
+      .title {
+          margin: 15px 0;
+          font-size: 25px;
+          font-weight: bold;
+          text-align: center;
+      }
+
+      label {
+          display: block;
+          height: 25px;
+          font-size: 20px;
+      }
+
+      span {
+          display: inline-block;
+          width: 80px;
+          margin-left: 10px;
+          text-align-last: justify
+      }
+
+      .text {
+          margin-left: 40px;
+          height: 25px;
+          width: 165px;
+          font-size: 20px;
+      }
+
+      .button {
+          width: 100px;
+          height: 40px;
+          font-size: 18px;
+      }
+
+      .error {
+          color: red;
+          height: 60px;
+      }
+
+      form {
+          margin-top: 30px;
+          text-align: center;
+      }
+  </style>
+  <script>
+      var error = [];
+
+      function calculate() {
+          resetting();
+          const input_result = document.getElementById("result");
+          input_result.value = "";
+          const firstNumber = document.getElementById("firstNumber").value;
+          const secondNumber = document.getElementById("secondNumber").value;
+
+          const isValidFirstNumber = validateNumber(firstNumber, "一");
+          const isValidSecondNumber = validateNumber(secondNumber, "二");
+          if (!(isValidFirstNumber && isValidSecondNumber)) {
+              const errorMessage = `${error.join("、")}，请输入-99到99之间的整数`;
+              document.querySelector(".error").innerHTML = "<p style='margin: 0 auto; width: 300px;'>" + errorMessage + "</p>";
+              error = [];
+              return 0;
+          }
+          input_result.value = Number(firstNumber) + Number(secondNumber);
+      }
+
+      function validateNumber(num, index) {
+          const isNumber = !isNaN(parseFloat(num)) && isFinite(num);
+          const isInteger = /^[1-9-]\d*$/.test(num);
+          const isOutOfRange = num < -99 || num > 99;
+
+          if (isNumber && isInteger && !isOutOfRange) {
+              return true;
+          } else {
+              const message = isNumber ? (isInteger ? '越界' : '不是整数') : '不是数或为空';
+              error.push(`第${index}个数${message}`);
+              return false;
+          }
+      }
+
+      function resetting() {
+          document.querySelector(".error").innerHTML = "";
+      }
+  </script>
+</head>
+
+<body>
+<div class="UI">
+  <p class="title">两位整数加法计算器</p>
+  <form>
+    <label>
+      <span>第一个数</span>
+      <input type="text" id="firstNumber" class="text">
+    </label><br>
+    <label>
+      <span>第二个数</span>
+      <input type="text" id="secondNumber" class="text">
+    </label><br>
+    <label>
+      <span>结果</span>
+      <input type="text" id="result" class="text" readonly>
+    </label><br>
+    <div class="error">
+    </div>
+    <input type="button" value="计算(J)" class="button" onclick="calculate()">
+    <input type="reset" value="重置(C)" class="button" onclick="resetting()">
+    <input type="button" value="退出(E)" class="button" onclick="window.close()">
+  </form>
+</div>
+</body>
+
+</html>

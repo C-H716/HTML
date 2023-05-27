@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		div{ width:800px; height: 800px; background-color: aqua}
+	</style>
+</head>
+
+<body>
+	<div id="myD">this is div.hahaha</div>
+</body>
+	<script>
+		/*let myD=document.querySelector("#myD");
+		myD.addEventListener("touchmove",function(){
+			console.log("touch");
+		});*/
+		
+		let myBody=document.querySelector("#myD");
+		myBody.addEventListener("touchstart",function(e){
+			startPageX=e.changedTouches[0].pageX;
+			startPageY=e.changedTouches[0].pageY;
+			e.preventDefault();
+		});
+		
+		myBody.addEventListener("touchend",function(e){
+			endPageX=e.changedTouches[0].pageX;
+			endPageY=e.changedTouches[0].pageY;
+			if(endPageX-startPageX>30)
+				console.log("slide right");
+			if(endPageX-startPageX<-30)
+				console.log("slide left");
+			if(endPageY-startPageY>30)
+				console.log("slide down");
+			if(endPageY-startPageY<-30)
+				console.log("slide up");
+			e.preventDefault();
+		});
+	</script>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<title>无标题文档</title>
+	<style>
+		input:focus{ background-color: yellow}
+	</style>
+</head>
+
+<body>
+	<form method="get" action="html5-2.html" id="myForm" >
+		<fieldset>
+			<legend>MyForm</legend>
+			<input type="text" name="myName" size="5" maxlength="3" autofocus><br>
+			<input type="password" name="myPSW" placeholder="请输入密码" required> <br>
+			<input type="email" name="myEmail"><br>
+			<input type="url" name="myURL"><br>
+			<input type="search" name="mySearch" autocomplete="off"><br>
+			<input type="tel" name="myTel" pattern="1[0-9]{10}"><br>
+			<input type="radio" name="mySex" value="M">male
+			<input type="radio" name="mySex" value="F">female
+			<br>
+			<input type="checkbox" name="myHobby" value="A" checked>Apple
+			<input type="checkbox" name="myHobby" value="B">Box
+			<input type="checkbox" name="myHobby" value="C" checked>Car
+			<input type="checkbox" name="myHobby" value="D">Dog
+			<br>
+			<input type="file" name="myFile" multiple>
+			<br>
+			<textarea name="myCV" cols="10" rows="10"></textarea>
+			<br>
+			<select multiple>
+				<optgroup label="GD">
+					<option value="GZ">GuangZhou</option>
+					<option value="GZ1">GuangZhou1</option>
+					<option value="GZ2">GuangZhou2</option>
+				</optgroup>
+				<optgroup label="GD">
+					<option value="GZ">GuangZhou</option>
+					<option value="GZ1">GuangZhou1</option>
+					<option value="GZ2">GuangZhou2</option>
+				</optgroup>
+			</select>
+			<br>
+			<input type="number" name="myNo" min="0" max="10"><br>
+			<input type="range" name="myRange" min="0" max="10" value="0" step="5">
+			<br>
+			<input type="datetime-local"><br>
+			<input type="month"><br>
+			<input type="week"><br>
+			<input type="date"><br>
+			<input type="time"><br>
+			<input type="color" name="myColor"><br>
+			<p>DataList</p>
+			<input type="search" list="myDataList">
+			<datalist id="myDataList">
+				<option value="A">Apple</option>
+				<option value="B">Box</option>
+				<option value="C">Car</option>
+				<option value="水果">苹果</option>
+			</datalist>		
+		</fieldset>
+	</form>
+	<input type="submit" form="myForm">
+	<input type="reset" form="myForm">
+	<button formmethod="post" form="myForm" formaction="tryLayout.html">POST</button>
+</body>
+</html>

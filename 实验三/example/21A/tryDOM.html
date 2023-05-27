@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	
+</head>
+
+<body>
+	<p id="myP" name="myP" class="myP">this is p</p>
+</body>
+	<script>
+		let myP=document.querySelector("#myP");
+		console.log(myP.parentNode.parentNode.parentNode.nodeName+myP.firstChild.nodeValue);
+		var a=myP.attributes;
+		for(let i of a)
+			console.log(i.nodeName+i.nodeType);
+		myP.style.backgroundColor="red";
+	</script>
+</html>

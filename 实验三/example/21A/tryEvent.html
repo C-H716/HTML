@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	
+</head>
+
+<body>
+	<button onClick="tryE1(this)">tryE1()</button>
+	<button id="myB1">tryE2()</button>
+	<button id="myB2">tryE3()</button>
+	<input type="text" onKeyDown="tryE(event)">
+</body>
+	<script>
+		function tryE(bbc){
+			console.log(bbc.keyCode);
+		}
+		function tryE1(abc){
+			//alert(abc);
+			abc.style.backgroundColor="red";
+		}
+		var myB1=document.querySelector("#myB1");
+/*		myB1.onclick=function(){
+			alert("e2e2e2e2e2");
+		}*/
+		myB1.onclick=tryE1;
+		
+		var myB2=document.querySelector("#myB2");
+		/*myB2.addEventListener("click",function(){
+			alert("e3e3e3e3e3");
+		});*/
+		myB2.addEventListener("click",tryE1);
+	</script>
+</html>
